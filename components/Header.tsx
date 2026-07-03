@@ -23,7 +23,7 @@ export default function Header() {
             {item.label}
           </Link>
         ))}
-        <a className="cta" href={site.blog} target="_blank" rel="noreferrer">
+        <a className="nav-blog-btn" href={site.blog} target="_blank" rel="noreferrer">
   <span className="desktop-only">블로그 전체보기</span>
   <span className="mobile-only">블로그</span>
 </a>
