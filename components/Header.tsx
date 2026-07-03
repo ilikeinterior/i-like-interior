@@ -24,8 +24,9 @@ export default function Header() {
           </Link>
         ))}
         <a className="cta" href={site.blog} target="_blank" rel="noreferrer">
-          블로그 전체보기
-        </a>
+  <span className="desktop-only">블로그 전체보기</span>
+  <span className="mobile-only">블로그</span>
+</a>
       </nav>
 
     </header>
