@@ -2,19 +2,32 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { site } from '@/lib/site-data';
 
 export const metadata: Metadata = {
-  title: {
-    default: '별내목수 | 아이라이크 인테리어',
-    template: '%s | 별내목수',
-  },
-  description: site.description,
+  title: "별내목수 · 아이라이크 인테리어",
+  description:
+    "운정·파주 인테리어 전문. TV벽, 히든도어, 우물천장, 맞춤 목공 시공.",
+
+  keywords: [
+    "파주 인테리어",
+    "운정 인테리어",
+    "별내목수",
+    "아이라이크 인테리어",
+    "TV벽 시공",
+    "히든도어",
+    "우물천장",
+    "목공 인테리어",
+    "상가 인테리어",
+    "아파트 인테리어"
+  ],
+
   openGraph: {
-    title: '별내목수 | 아이라이크 인테리어',
-    description: site.description,
-    locale: 'ko_KR',
-    type: 'website',
+    title: "별내목수 · 아이라이크 인테리어",
+    description:
+      "운정·파주 인테리어 전문. TV벽, 히든도어, 우물천장, 맞춤 목공 시공.",
+    siteName: "아이라이크 인테리어",
+    locale: "ko_KR",
+    type: "website",
   },
 };
 
