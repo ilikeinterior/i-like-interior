@@ -184,12 +184,17 @@ white-space:nowrap;
     background:var(--white); overflow:hidden; margin-bottom:50px;
     display:block; box-shadow:0 1px 3px rgba(0,0,0,0.06);
   }
-  .feature-card .f-imgs{ display:grid; grid-template-columns:1fr 1fr; gap:2px; }
- .feature-card .f-imgs img{
-  width:100%;
+.feature-card .f-imgs{
+  display:flex;
+  gap:2px;
+}
+
+.feature-card .f-imgs img{
+  width:50%;
   height:320px;
-  object-fit:cover;
+  object-fit:contain;
   display:block;
+  background:#eee;
 }
 @media(max-width:768px){
   .feature-card .f-imgs{
