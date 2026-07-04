@@ -407,3 +407,12 @@ white-space:nowrap;
     display: none !important;
   }
 }
+.contact-btns{
+  display:flex;
+  gap:10px;
+}
+
+.contact-btns .btn{
+  flex:1;
+  justify-content:center;
+}
