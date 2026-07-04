@@ -346,3 +346,22 @@ white-space:nowrap;
   }
 
 }
+@media (max-width: 768px) {
+  .feature-card {
+    display: block;
+  }
+
+  .f-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .f-imgs img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
