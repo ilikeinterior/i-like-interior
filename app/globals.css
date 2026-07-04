@@ -303,21 +303,15 @@ white-space:nowrap;
   footer .f-links{ margin-top:18px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
   footer .f-links a{ color:#B8B3AA; font-size:0.82rem; text-decoration:none; }
   footer .f-links a:hover{ color:var(--paper); }
-  
+
 @media (max-width: 768px) {
-  .f-imgs {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 10px !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+  header {
+    position: fixed;
+    padding: 18px 6vw;
+    gap: 16px;
   }
 
-  .f-imgs img {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+  .logo {
+    font-size: 1rem;
+    white-space: nowrap;
   }
-}
