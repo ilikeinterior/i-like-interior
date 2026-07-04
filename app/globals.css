@@ -431,3 +431,22 @@ white-space:nowrap;
   white-space: nowrap;
   font-size: 0.9rem;
 }
+/* PC */
+.desktop-only {
+  display: inline;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline;
+  }
+}
