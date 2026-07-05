@@ -192,7 +192,7 @@ white-space:nowrap;
 .feature-card .f-imgs img{
   width:50%;
   height:320px;
-  object-fit:contain;
+  object-fit:cover;
   display:block;
   background:#eee;
 }
@@ -456,4 +456,18 @@ white-space:nowrap;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 12px;
+}
+.footer-links a {
+  color: inherit;
+  text-decoration: none;
+}
+.contact-btns .btn {
+  padding: 18px 24px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.contact-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }

@@ -7,8 +7,8 @@ export const site = {
   blog: 'https://blog.naver.com/gris2',
   kakao: 'http://pf.kakao.com/_SsxjaG',
   tistory: 'https://i-like-interior.tistory.com',
-  instagram: '#',
-  youtube: '#',
+  instagram: 'https://www.instagram.com/i_like_interior_',
+  youtube: 'https://www.youtube.com/@ilikeinterior',
   area: '서울·경기도 전역',
 };
 
@@ -44,7 +44,10 @@ export const portfolioItems = [
     price: '700만원 · 목공 전체 공정',
     desc: '거실-안방 히든 도어, MDF 입체 포인트 벽면, TV 일체형 가벽, 라운드 우물천장 간접조명, 아치형 드레스룸 게이트까지 한 번에 진행한 현장입니다.',
     tags: ['히든 도어', 'TV 가벽', '라운드 우물천장', '아치 게이트'],
-    image: images[1],
+    images: [
+  { src: '/images/work-14.jpg', alt: '운정 해링턴 플레이스 거실 사진 1' },
+  { src: '/images/work-15.jpg', alt: '운정 해링턴 플레이스 거실 사진 2' },
+],
   },
   {
     title: '사무실 공간 무늬목 곡면 카운터',
@@ -52,7 +55,10 @@ export const portfolioItems = [
     price: '700만원 · 히든도어·무늬목 목공',
     desc: '곡선 파티션에 무늬목을 입히고, 슬라이딩 도어를 제외한 모든 문을 히든 도어로 감춘 현장입니다.',
     tags: ['무늬목', '곡면 카운터', '히든 도어', '하이 도어'],
-    image: images[3],
+    images: [
+  { src: '/images/work-16.jpg', alt: '무늬목 곡면 카운터 문/복도' },
+  { src: '/images/work-4.jpg', alt: '무늬목 곡면 카운터 before after' },
+],
   },
   {
     title: '요아정 불광점 라운드 카운터',
