@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/og-image.png",
-        width: 1200,
-        height: 1200,
+        width: 726,
+        height: 331,
         alt: "아이라이크 인테리어 - 비흡연 목수팀",
       },
     ],
