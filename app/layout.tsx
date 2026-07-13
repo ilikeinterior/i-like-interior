@@ -29,6 +29,12 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     type: "website",
   },
+
+  verification: {
+    other: {
+      "naver-site-verification": "1720cc600690f9c8a3282168fc7ecec8bb3a8a5b",
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
