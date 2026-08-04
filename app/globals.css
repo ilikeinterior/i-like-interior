@@ -401,11 +401,6 @@ white-space:nowrap;
     white-space: nowrap;
   }
 
-  .nav a[href="/service"],
-  .nav a[href="/blog"],
-  .nav-blog-btn {
-    display: none !important;
-  }
 }
 .contact-btns{
   display:flex;
