@@ -25,7 +25,7 @@ export default function Header() {
         ))}
         <a className="nav-blog-btn" href={site.blog} target="_blank" rel="noreferrer">
   <span className="desktop-only">블로그 전체보기</span>
-  <span className="mobile-only">블로그</span>
+  <span className="mobile-only">블로그 전체보기</span>
 </a>
       </nav>
 
