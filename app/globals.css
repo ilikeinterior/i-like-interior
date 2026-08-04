@@ -397,9 +397,9 @@ white-space:nowrap;
   }
 
   .nav a {
-    font-size: 0.9rem;
-    white-space: nowrap;
-  }
+  font-size: 0.85rem;
+  white-space: normal;
+}
 
 }
 .contact-btns{
