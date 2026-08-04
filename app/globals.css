@@ -400,7 +400,9 @@ white-space:nowrap;
   font-size: 0.85rem;
   white-space: nowrap;
 }
-
+main {
+  padding-top: 140px;
+}
 }
 .contact-btns{
   display:flex;
