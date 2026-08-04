@@ -35,6 +35,7 @@ export const images = [
   { src: '/images/work-11.jpg', alt: '한복매장 목공 시공' },
   { src: '/images/work-12.jpg', alt: '팔당 아파트 거실 시공' },
   { src: '/images/work-13.jpg', alt: '별내 아파트 거실 시공' },
+  { src: '/images/work-17.jpg', alt: '서울교통공사 지축차량기지 직원 휴게실 평상마루 시공' },
 ];
 
 export const portfolioItems = [
@@ -59,6 +60,14 @@ export const portfolioItems = [
   { src: '/images/work-16.jpg', alt: '무늬목 곡면 카운터 문/복도' },
   { src: '/images/work-4.jpg', alt: '무늬목 곡면 카운터 before after' },
 ],
+  },
+  {
+    title: '서울교통공사 지축차량기지 직원 휴게실 평상마루',
+    category: '상업 · 관공서',
+    price: '280만원',
+    desc: '지하철 차량기지 직원 휴게실에 걸터앉기 편한 평상마루를 시공했습니다. 합판 이음새 틈새 처리로 소음을 방지하고, 실리콘 보강으로 흔들림 없이 고정했습니다.',
+    tags: ['평상마루', '관공서', '휴게실 시공'],
+    image: images[13],
   },
   {
     title: '요아정 불광점 라운드 카운터',
