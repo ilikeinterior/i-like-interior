@@ -256,7 +256,7 @@ white-space:nowrap;
   .blog-section .section-head p{ color:#B8B3AA; }
   .blog-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; margin-bottom:40px; }
   .blog-item{
-    border:1px solid #3A3835; padding:22px 20px; text-decoration:none; color:var(--paper);
+    border:1px solid #3A3835; padding:22px 20px; text-decoration:none; color:var(--ink);
     display:block; transition:all 0.2s ease; position:relative;
   }
   .blog-item:hover{ background:#26241f; border-color:var(--wood); }
