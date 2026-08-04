@@ -259,7 +259,7 @@ white-space:nowrap;
     border:1px solid #3A3835; padding:22px 20px; text-decoration:none; color:var(--ink);
     display:block; transition:all 0.2s ease; position:relative;
   }
-  .blog-item:hover{ background:#26241f; border-color:var(--wood); }
+  .blog-item:hover { background: #26241f; border-color: var(--wood); color: var(--paper); }
   .blog-item .b-price{ font-family:'Archivo',sans-serif; color:#D9B98A; font-weight:700; font-size:0.92rem; margin-bottom:10px; }
   .blog-item .b-title{ font-size:0.94rem; line-height:1.5; color:var(--paper); margin-bottom:14px; }
   .blog-item .b-arrow{ font-size:0.8rem; color:#8B6F4E; font-weight:600; }
