@@ -390,15 +390,16 @@ white-space:nowrap;
   }
 
   .nav {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px 18px;
-  }
-
-  .nav a {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 10px 8px;
+}
+.nav a {
   font-size: 0.85rem;
-  white-space: normal;
+  white-space: nowrap;
+}
 }
 
 }
