@@ -17,6 +17,7 @@ export const navItems = [
   { href: '/about', label: '소개' },
   { href: '/service', label: '서비스 안내' },
   { href: '/portfolio', label: '포트폴리오' },
+  { href: '/#video', label: '동영상' },
   { href: '/blog', label: '시공일지' },
   { href: '/contact', label: '문의하기' },
 ];
