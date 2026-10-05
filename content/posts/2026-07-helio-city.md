@@ -79,7 +79,7 @@ TV 가벽과 주방, 두 곳 모두 철거 뒤에 예상 밖의 바탕 손상이
 
 서울과 경기 모두 나가며, 그중 별내(남양주) 주변 작업이 가장 많습니다.
 
-- 네이버 블로그: https://blog.naver.com/gris2
+- 네이버 블로그 원문: https://blog.naver.com/gris2/224335296120
 - 홈페이지: https://www.ilikeinterior.com
 - 유튜브: https://www.youtube.com/@ilikeinterior
 - 카카오채널: http://pf.kakao.com/_SsxjaG
