@@ -1,7 +1,7 @@
 export const site = {
   name: '별내목수',
   brand: '별내목수 · 아이라이크 인테리어',
-  description: '비흡연 목수팀 · 아버지와 아들이 함께하는 인테리어 목공 · 서울 경기도 전역 시공',
+  description: '비흡연 목수팀 · 아버지를 중심으로 한 인테리어 목공 · 남양주·일산·분당 등 서울·경기 시공',
   phone: '010-4551-9870',
   phoneHref: 'tel:01045519870',
   blog: 'https://blog.naver.com/gris2',
@@ -9,7 +9,7 @@ export const site = {
   tistory: 'https://i-like-interior.tistory.com',
   instagram: 'https://www.instagram.com/i_like_interior_',
   youtube: 'https://www.youtube.com/@ilikeinterior',
-  area: '서울·경기도 전역',
+  area: '남양주·일산·분당 등 서울·경기 지역',
 };
 
 export const navItems = [
