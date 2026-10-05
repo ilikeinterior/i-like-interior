@@ -126,7 +126,7 @@ export const services = [
 ];
 
 export const blogPosts = [
-  { title: '의정부 신곡동 아파트 리모델링 목공 — TV가벽 MDF패널부터 마이너스몰딩까지', price: '860만원', href: 'https://blog.naver.com/PostView.naver?blogId=gris2&logNo=224298801333' },
+
   { title: '한복 매장 목공 — 예산 빠듯할수록 공정 정리가 답', price: '370만원', href: 'https://blog.naver.com/PostView.naver?blogId=gris2&logNo=224176271260' },
   { title: '의정부 신동아 은하수 아파트 37평 목공 — 구축 아파트 리모델링', price: '480만원', href: 'https://blog.naver.com/PostView.naver?blogId=gris2&logNo=224172550643' },
   { title: '의정부 신곡동 현진에버빌 25평 — 거실 분위기 바꾼 마루 아트월', price: '400만원', href: 'https://blog.naver.com/PostView.naver?blogId=gris2&logNo=224186534304' },
