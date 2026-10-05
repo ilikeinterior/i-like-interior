@@ -41,6 +41,20 @@ export const images = [
 
 export const portfolioItems = [
   {
+    title: '용인 상현동 현대성우1차 아파트 아이 있는 집 목공',
+    category: '주거 · 아파트 목공 6일',
+    price: '700만원 · 목공 6일',
+    desc: '아이가 있는 집이라 모서리를 줄이는 데 집중한 현장입니다. 현관 코너 R150 라운딩과 화이트 템바보드 간접조명, 전실 아치 게이트, 거실 반원 몰딩 아트월, 부엌 입구와 작은방 아치, 단열·천장 평탄화·에어컨 단내림까지 6일 동안 진행했습니다.',
+    tags: ['라운딩', '아치 게이트', '템바보드', '아트월'],
+    images: [
+      { src: '/images/sanghyeon-1.jpg', alt: '용인 상현동 아파트 현관 코너 R150 라운딩 화이트 템바보드 간접조명 목공' },
+      { src: '/images/sanghyeon-2.jpg', alt: '용인 아파트 전실 아치 게이트와 곡면 템바보드 벽 시공' },
+      { src: '/images/sanghyeon-3.jpg', alt: '아치형 게이트 너머 창과 햇빛 용인 상현동 라운딩 목공' },
+      { src: '/images/sanghyeon-4.jpg', alt: '용인 상현동 아파트 거실 아트월 반원 몰딩 라운드 가벽 목표 이미지' },
+      { src: '/images/sanghyeon-5.jpg', alt: '소파 자리를 감싸는 거실 아트월 라운드 가벽 선반 간접조명 목표 이미지' },
+    ],
+  },
+  {
     title: '운정 해링턴 플레이스 GTX 아파트 24평형',
     category: '주거 · 아파트 전체 목공',
     price: '700만원 · 목공 전체 공정',
