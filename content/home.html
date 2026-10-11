@@ -136,72 +136,66 @@ min-height:740px;display:flex;flex-direction:column;justify-content:space-betwee
 <div class="sub">시간을 아끼려는 게 아닙니다. 고객님 집과 매장에 냄새가 배는 일 자체를 처음부터 만들지 않겠다는 겁니다.</div>
 </div>
 <div class="seam"></div>
-<section class="section about-section" id="about">
-<div class="section-head">
-<span class="label">ABOUT US</span>
-<h2>시공만 하지 않습니다.<br/><span class="accent">순서와 우선순위</span>를 함께<br/> 정합니다.</h2>
-<p>별내목수는 단순히 자재를 붙이는 팀이 아니라, 예산 안에서 무엇을 먼저 해야 하는지 설명하고 함께 결정하는 팀입니다.</p>
+<style>
+.nx-sec{--nx-bg:#f5f2ed;--nx-s200:#ece8db;--nx-ink:#1c1b19;--nx-mute:#5b584f;--nx-line:#c9c2b4;--nx-acc:#1f3a68}
+.nx-w2{padding:0 40px;max-width:1280px;margin:0 auto}
+.nx-sec{padding:64px 0;background:var(--nx-bg);color:var(--nx-ink);word-break:keep-all}.nx-sec.nx-alt{background:var(--nx-s200)}
+.nx-eb{font-size:13px;line-height:18px;font-weight:700;letter-spacing:1px;color:var(--nx-acc);margin:0 0 16px}
+h2.nx-h{margin:0 0 24px;font-size:clamp(28px,4.2vw,52px);line-height:1.18;font-weight:800;letter-spacing:-2px}
+h2.nx-h em{font-style:normal;color:var(--nx-acc)}
+.nx-sub{max-width:34em;color:var(--nx-mute);font-size:17px;line-height:28px}
+.nx-vals{display:grid;grid-template-columns:repeat(2,1fr);margin-top:64px;border-top:1px solid var(--nx-line)}
+.nx-val{padding:24px 40px 24px 0;border-bottom:1px solid var(--nx-line)}
+.nx-val:nth-child(even){padding:24px 0 24px 40px;border-left:1px solid var(--nx-line)}
+.nx-val .nx-no{color:var(--nx-acc);font-weight:700;font-size:13px;letter-spacing:1px;margin-bottom:8px}
+.nx-val .nx-t{font-size:24px;line-height:34px;font-weight:700;letter-spacing:-.5px;margin-bottom:8px}
+.nx-val p{color:var(--nx-mute);font-size:17px;line-height:28px;max-width:26em}
+.nx-val.nx-key{background:var(--nx-s200);box-shadow:inset 3px 0 0 var(--nx-acc);padding-left:24px}
+.nx-val.nx-key .nx-t{font-size:28px;letter-spacing:-1px}
+.nx-trades{display:flex;align-items:center;gap:24px;margin-top:40px;padding:16px 0;border-bottom:1px solid var(--nx-line)}
+.nx-own{display:flex;align-items:center;gap:12px;flex:none;padding-right:24px;border-right:1px solid var(--nx-line)}
+.nx-own .nx-l{font-size:13px;color:var(--nx-mute);letter-spacing:1px}
+.nx-own b{background:var(--nx-acc);color:#fff;font-weight:700;font-size:18px;padding:10px 22px;border-radius:999px}
+.nx-intro{display:flex;align-items:center;gap:16px;min-width:0;flex:1}.nx-intro .nx-l{flex:none;font-size:13px;color:var(--nx-mute);letter-spacing:1px}
+.nx-mq{overflow:hidden;flex:1;min-width:0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.nx-tk{display:inline-flex;gap:10px;white-space:nowrap;animation:nxflow 60s linear infinite}
+.nx-tk span{font-size:15px;color:var(--nx-mute);border:1px solid var(--nx-line);border-radius:999px;padding:9px 18px}
+@keyframes nxflow{to{transform:translateX(-50%)}}
+.nx-team{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:64px;align-items:start}
+.nx-team h3{margin:0 0 16px;font-size:clamp(24px,2.6vw,34px);line-height:1.3;font-weight:800;letter-spacing:-1px}
+.nx-people{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.nx-person{background:var(--nx-s200);padding:24px;border-top:2px solid var(--nx-acc)}
+.nx-person .nx-role{font-size:13px;color:var(--nx-mute);letter-spacing:1px;margin-bottom:8px}
+.nx-person .nx-yrs{font-size:24px;line-height:1.3;font-weight:800;letter-spacing:-1px;margin-bottom:16px}
+.nx-person p{color:var(--nx-mute);font-size:17px;line-height:28px}
+.nx-area{font-size:13px;letter-spacing:1px;color:var(--nx-mute);margin-top:40px}
+.nx-trio{display:grid;grid-template-columns:repeat(3,1fr);margin-top:64px;border-top:1px solid var(--nx-line)}
+.nx-tr{padding:24px 24px 0 0}.nx-tr+.nx-tr{padding-left:24px;border-left:1px solid var(--nx-line)}
+.nx-tr .nx-no{color:var(--nx-acc);font-weight:700;font-size:13px;letter-spacing:1px;margin-bottom:8px}
+.nx-tr .nx-t{font-size:24px;line-height:34px;font-weight:700;letter-spacing:-.5px;margin-bottom:8px}
+.nx-tr p{color:var(--nx-mute);font-size:17px;line-height:28px}
+.nx-blk{display:inline-block;margin-top:18px;font-weight:700;color:#1c1b19;border-bottom:2px solid #1c1b19;padding-bottom:3px;text-decoration:none}
+@media(max-width:760px){.nx-w2{padding:0 16px}.nx-team,.nx-people,.nx-trio,.nx-vals{grid-template-columns:1fr}.nx-team{gap:24px}
+.nx-val,.nx-val:nth-child(even){padding:24px 0;border-left:0}.nx-val.nx-key{padding:24px}.nx-trades{flex-direction:column;align-items:flex-start}.nx-own{border-right:0;padding-right:0}.nx-intro{flex-direction:column;align-items:flex-start;width:100%}.nx-mq{width:100%}
+.nx-tr,.nx-tr+.nx-tr{padding:24px 0;border-left:0;border-bottom:1px solid var(--nx-line)}}
+@media(prefers-reduced-motion:reduce){.nx-tk{animation:none}}
+</style>
+<section class="nx-sec" id="about"><div class="nx-w2">
+<p class="nx-eb">ABOUT US</p>
+<h2 class="nx-h">시공만 하지 않습니다.<br><em>순서와 우선순위</em>를 함께 정합니다.</h2>
+<p class="nx-sub">별내목수는 단순히 자재를 붙이는 팀이 아니라, 예산 안에서 무엇을 먼저 해야 하는지 설명하고 함께 결정하는 팀입니다.</p>
+<div class="nx-vals">
+<div class="nx-val nx-key"><div class="nx-no">01</div><div class="nx-t">처음부터 비흡연자만</div><p>작업 중에 참는 게 아니라, 담배를 피우는 사람은 처음부터 팀에 두지 않았습니다.</p></div>
+<div class="nx-val"><div class="nx-no">02</div><div class="nx-t">설명하는 목수</div><p>왜 이 순서로 작업하는지, 왜 이 자재를 쓰는지 현장에서 직접 설명합니다.</p></div>
+<div class="nx-val"><div class="nx-no">03</div><div class="nx-t">소통되는 팀</div><p>30~40대 목수들이 아버지와 함께 움직여서 빠르게 묻고 답할 수 있습니다.</p></div>
+<div class="nx-val"><div class="nx-no">04</div><div class="nx-t">공정별로 맡기는 방식</div><p>목공은 저희와 계약하시고, 나머지 공정은 팀을 소개해 드립니다. 계약은 공정마다 따로 하십니다.</p></div>
 </div>
-<div class="about-grid">
-<div class="about-col">
-<h3>가치관</h3>
-<ul class="principle-list">
-<li>
-<span class="mark">01</span>
-<div class="txt">
-<b>설명하는 목수</b>
-<span>왜 이 순서로 작업하는지, 왜 이 자재를 쓰는지 현장에서 직접 설명합니다.</span>
-</div>
-</li>
-<li>
-<span class="mark">02</span>
-<div class="txt">
-<b>소통되는 팀</b>
-<span>30~40대 목수들이 아버지와 함께 움직여서 빠르게 묻고 답할 수 있습니다.</span>
-</div>
-</li>
-<li>
-<span class="mark">03</span>
-<div class="txt">
-<b>원래부터 비흡연자로 꾸린 팀</b>
-<span>작업 중 흡연 휴식이 없는 게 아니라, 담배를 피우는 사람은 팀에 두지 않았습니다.</span>
-</div>
-</li>
-<li>
-<span class="mark">04</span>
-<div class="txt">
-<b>작은 작업도 기꺼이</b>
-<span>하찮아 보이는 보수 작업도 끝까지 책임지고 마무리합니다.</span>
-</div>
-</li>
-<li>
-<span class="mark">05</span>
-<div class="txt">
-<b>공정별로 맡기는 방식</b>
-<span>목공은 저희와 계약하시고, 나머지 공정은 팀을 소개해 드립니다. 계약은 공정마다 따로 하시고, 원하시면 전체를 맡아서 하는 팀도 연결해 드립니다.</span>
-<div style="margin-top:8px;font-size:13px;opacity:.85;line-height:1.7">전기 · 필름 · 도배 · 철거 · 설비 · 샷시 · 타일 · 도장 · 바닥 · 욕실 · 가구 · 조명 · 입주 청소</div>
-</div>
-</li>
-</ul>
-</div>
-<div class="about-col">
-<h3>팀 소개</h3>
-<p>아버지의 손기술과 아들의 트렌드 감각이 만나, 오래된 노하우와 요즘 자재·시공 방식을 함께 씁니다. 기본 3~4명이 함께 움직이고, 현장 규모에 따라 10명 이상도 구성합니다. 활동 지역은 남양주, 일산, 분당 등 서울·경기 지역이 주이며, 상황에 따라 지방 출장도 다녀옵니다.</p>
-<div class="team-strip">
-<div class="team-card">
-<div class="role">대표 · 아들</div>
-<div class="yrs">25<span>년 경력</span></div>
-<p>인테리어 목공 전반, 현장 소통과 일정 관리를 맡습니다.</p>
-</div>
-<div class="team-card">
-<div class="role">아버지</div>
-<div class="yrs">25<span>년+ 경력</span></div>
-<p>오랜 손기술로 디테일과 마감 완성도를 책임집니다.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+<div class="nx-trades"><div class="nx-own"><span class="nx-l">직접 시공</span><b>목공</b></div>
+<div class="nx-intro"><span class="nx-l">소개해 드리는 공정</span><div class="nx-mq" aria-hidden="true"><div class="nx-tk"><span>전기</span><span>필름</span><span>도배</span><span>철거</span><span>설비</span><span>샷시</span><span>타일</span><span>도장</span><span>바닥</span><span>욕실</span><span>가구</span><span>조명</span><span>입주 청소</span><span>전기</span><span>필름</span><span>도배</span><span>철거</span><span>설비</span><span>샷시</span><span>타일</span><span>도장</span><span>바닥</span><span>욕실</span><span>가구</span><span>조명</span><span>입주 청소</span></div></div></div></div>
+<div class="nx-team"><div><p class="nx-eb">TEAM</p><h3>아버지의 손기술과<br>아들의 트렌드 감각이 만납니다</h3><p class="nx-sub">오래된 노하우와 요즘 자재·시공 방식을 함께 씁니다. 기본 3~4명이 함께 움직이고, 현장 규모에 따라 10명 이상도 구성합니다.</p></div>
+<div class="nx-people"><div class="nx-person"><div class="nx-role">아들</div><div class="nx-yrs">아버지 밑에서 배운<br>25년차 목수</div><p>인테리어 목공 전반, 현장 소통과 일정 관리를 맡습니다.</p></div>
+<div class="nx-person"><div class="nx-role">아버지</div><div class="nx-yrs">25년이 넘는<br>경력의 목수</div><p>오랜 손기술로 디테일과 마감 완성도를 책임집니다.</p></div></div></div>
+<p class="nx-area">활동 지역 · 남양주, 일산, 분당 등 서울·경기 (상황에 따라 지방 출장)</p></div></section>
 <div class="seam"></div>
 <section class="section portfolio-section" id="portfolio">
 <div class="section-head">
@@ -223,6 +217,7 @@ min-height:740px;display:flex;flex-direction:column;justify-content:space-betwee
     <p class="desc">거실-안방 히든 도어, MDF 입체 포인트 벽면, TV 일체형 가벽, 라운드 가벽, 우물천장 간접조명, 아치형 드레스룸 게이트까지 한 번에 진행한 현장입니다. 우수관 소음까지 스프레이폼으로 잡았습니다.</p>
     <div class="price">700<span>만원 · 목공 전체 공정</span></div>
     <div class="process-tags"><span>히든 도어</span><span>TV 가벽</span><span>라운드 가벽</span><span>우물천장</span><span>아치 게이트</span></div>
+    <a class="nx-blk" href="https://blog.naver.com/gris2" target="_blank" rel="noopener">블로그에서 현장 사진 더 보기 →</a>
   </div>
 </div>
 
@@ -240,6 +235,7 @@ min-height:740px;display:flex;flex-direction:column;justify-content:space-betwee
     <p class="desc">곡선 파티션에 무늬목을 입히고, 슬라이딩 도어를 제외한 모든 문을 히든 도어로 감췄습니다. 천장까지 닿는 하이 도어 작업까지 포함된 현장입니다.</p>
     <div class="price">700<span>만원 · 히든도어·무늬목 목공</span></div>
     <div class="process-tags"><span>무늬목</span><span>곡면 카운터</span><span>히든 도어</span><span>하이 도어</span></div>
+    <a class="nx-blk" href="https://blog.naver.com/gris2" target="_blank" rel="noopener">블로그에서 현장 사진 더 보기 →</a>
   </div>
 </div>
 <div class="filter-row">
@@ -576,30 +572,15 @@ min-height:740px;display:flex;flex-direction:column;justify-content:space-betwee
 </div>
 </section>
 <div class="seam"></div>
-<section class="section trust-section">
-<div class="section-head">
-<span class="label">WHY 별내목수</span>
-<h2>현장에서 자주 받는<br/>믿음에 대한 이야기입니다.</h2>
-<p>좋은 점만 말씀드리진 않겠습니다. 현장마다 한계도 솔직히 말씀드리겠습니다.</p>
-</div>
-<div class="trust-grid">
-<div class="trust-card">
-<div class="icon-num">01</div>
-<h4>담배는 참는 게 아니라 없습니다</h4>
-<p>작업 중 흡연 휴식을 없앤 게 아니라, 담배를 피우는 사람은 팀에 두지 않았습니다. 고객 공간을 배려하기 위해서입니다. 목수팀만이 아니라 저희가 소개하는 전기·필름·도배 팀도 모두 비흡연 팀으로 구성합니다.</p>
-</div>
-<div class="trust-card">
-<div class="icon-num">02</div>
-<h4>두 세대가 함께 보는 디테일</h4>
-<p>아버지의 손기술과 아들의 최신 자재 감각이 같은 현장에서 동시에 작동합니다.</p>
-</div>
-<div class="trust-card">
-<div class="icon-num">03</div>
-<h4>문제는 끝까지 책임집니다</h4>
-<p>작업 중 생긴 손상이나 실수는 저희 쪽 책임 범위 안에서 끝까지 보완합니다. 가능과 불가능도 미리 말씀드립니다.</p>
-</div>
-</div>
-</section>
+<section class="nx-sec nx-why"><div class="nx-w2">
+<p class="nx-eb">WHY 별내목수</p>
+<h2 class="nx-h">현장에서 자주 받는<br><em>믿음에 대한 이야기</em>입니다.</h2>
+<p class="nx-sub">좋은 점만 말씀드리진 않겠습니다. 현장마다 한계도 솔직히 말씀드리겠습니다.</p>
+<div class="nx-trio">
+<div class="nx-tr"><div class="nx-no">01</div><div class="nx-t">참는 게 아니라, 처음부터 없습니다</div><p>고객 공간을 배려하기 위해서입니다. 저희가 소개하는 전기·필름·도배 팀도 비흡연 팀으로 구성합니다.</p></div>
+<div class="nx-tr"><div class="nx-no">02</div><div class="nx-t">두 세대가 함께 보는 디테일</div><p>아버지의 손기술과 아들의 최신 자재 감각이 같은 현장에서 동시에 작동합니다.</p></div>
+<div class="nx-tr"><div class="nx-no">03</div><div class="nx-t">문제는 끝까지 책임집니다</div><p>작업 중 생긴 손상이나 실수는 저희 쪽 책임 범위 안에서 끝까지 보완합니다. 가능과 불가능도 미리 말씀드립니다.</p></div>
+</div></div></section>
 <div class="seam"></div>
 <section class="section contact-section" id="contact">
 <div class="section-head">
