@@ -41,6 +41,23 @@ export const images = [
 
 export const portfolioItems = [
   {
+    title: '파주 운정 가람마을 44평 목공 3일',
+    category: '주거 · 아파트 목공 3일',
+    price: '410만원 · 목공 3일',
+    desc: '철거가 끝난 44평(145㎡)에서 거실 아트월·선반, 안방 아치형 게이트, 우물천장 정리와 마이너스 몰딩, 9mm 문선 5곳, 현관·주방 가벽까지 목공만 3일 진행했습니다.',
+    tags: ['아트월', '아치 게이트', '선반', '마이너스 몰딩'],
+    images: [
+      { src: '/images/garam-5.jpg', alt: '파주 운정 가람마을 44평 거실 아트월 목공' },
+      { src: '/images/garam-6.jpg', alt: '파주 운정 거실 선반 간접조명 목공' },
+      { src: '/images/garam-2.jpg', alt: '파주 운정 가람마을 거실 선반 시공' },
+      { src: '/images/garam-7.jpg', alt: '파주 운정 안방 아치형 게이트 목공' },
+      { src: '/images/garam-8.jpg', alt: '파주 운정 우물천장 정리 목공' },
+      { src: '/images/garam-9.jpg', alt: '파주 운정 마이너스 몰딩 시공' },
+      { src: '/images/garam-3.jpg', alt: '파주 운정 9mm 문선 리폼' },
+      { src: '/images/garam-4.jpg', alt: '파주 운정 가람마을 문선 덧붙임 시공' },
+    ],
+  },
+  {
     title: '용인 상현동 현대성우1차 아파트 아이 있는 집 목공',
     category: '주거 · 아파트 목공 6일',
     price: '700만원 · 목공 6일',
@@ -126,7 +143,7 @@ export const services = [
 ];
 
 export const blogPosts = [
-
+  { title: '파주 운정 가람마을 44평 목공 — 아트월·선반·아치 게이트 3일', price: '410만원', href: '/blog/2026-10-paju-unjeong-garam' },
   { title: '한복 매장 목공 — 예산 빠듯할수록 공정 정리가 답', price: '370만원', href: 'https://blog.naver.com/PostView.naver?blogId=gris2&logNo=224176271260' },
   { title: '의정부 신동아 은하수 아파트 37평 목공 — 구축 아파트 리모델링', price: '480만원', href: 'https://blog.naver.com/PostView.naver?blogId=gris2&logNo=224172550643' },
   { title: '의정부 신곡동 현진에버빌 25평 — 거실 분위기 바꾼 마루 아트월', price: '400만원', href: 'https://blog.naver.com/PostView.naver?blogId=gris2&logNo=224186534304' },
