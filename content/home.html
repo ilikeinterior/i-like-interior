@@ -9,7 +9,10 @@ min-height:740px;display:flex;flex-direction:column;justify-content:space-betwee
 .nh-brand{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.5px;color:var(--nh-ink)}
 .nh-brand img{height:30px;width:auto;mix-blend-mode:multiply}
 .nh-tel{font-weight:500;font-size:15px;border-bottom:1px solid var(--nh-line);padding-bottom:2px;color:var(--nh-ink)}
-.nh-main{padding-top:var(--nh-s6)}
+.nh-main{padding-top:var(--nh-s6);display:grid;grid-template-columns:1fr;gap:var(--nh-s5);align-items:center}
+.nh-photo{margin:0;border-radius:8px;overflow:hidden;aspect-ratio:16/9;background:#e4dfd5}
+@media (min-width:1240px){.nh-main{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}.nh-photo{aspect-ratio:4/5}}
+.nh-photo img{display:block;width:100%;height:100%;object-fit:cover}
 .nh-eyebrow{font-size:13px;line-height:18px;font-weight:500;letter-spacing:1px;color:var(--nh-mute);margin:0 0 var(--nh-s4)}
 .nh-h1{margin:0 0 var(--nh-s4);color:var(--nh-ink);font-weight:800;letter-spacing:-3px;font-size:clamp(34px,8vw,88px);line-height:1.1}
 .nh-mask{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
@@ -32,7 +35,7 @@ min-height:740px;display:flex;flex-direction:column;justify-content:space-betwee
 .nh-btn:focus-visible,.nh-top a:focus-visible{outline:2px solid var(--nh-acc);outline-offset:3px}
 .nh-fade{opacity:0;animation:nh-fade .8s ease forwards}
 .nh-d1{animation-delay:.2s}.nh-d2{animation-delay:.4s}.nh-d3{animation-delay:.5s}
-.nh-draw{height:2px;background:var(--nh-acc);transform:scaleX(0);transform-origin:left;margin:var(--nh-s6) 0 0;animation:nh-draw 1.3s cubic-bezier(.65,0,.2,1) .8s forwards}
+.nh-draw{height:2px;background:var(--nh-acc);transform:scaleX(0);transform-origin:left;margin:var(--nh-s6) 0 0;grid-column:1/-1;animation:nh-draw 1.3s cubic-bezier(.65,0,.2,1) .8s forwards}
 .nh-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0 0 var(--nh-s5)}
 .nh-fact{padding:var(--nh-s4) var(--nh-s3) 0 0;transition:transform .35s ease}
 .nh-fact+.nh-fact{padding-left:var(--nh-s3);border-left:1px solid var(--nh-line)}
@@ -52,7 +55,8 @@ min-height:740px;display:flex;flex-direction:column;justify-content:space-betwee
 .nh-wrap{padding:0 var(--nh-s3)}
 .nh-facts{grid-template-columns:1fr}
 .nh-fact+.nh-fact{padding-left:0;border-left:0;border-top:1px solid var(--nh-line);margin-top:var(--nh-s3)}
-.nh-main{padding-top:var(--nh-s5)}
+.nh-main{padding-top:var(--nh-s5);gap:var(--nh-s4)}
+.nh-photo{aspect-ratio:4/3}
 .nh-btn{flex:1 1 100%;justify-content:center}
 .nh-h1{letter-spacing:-1.5px}
 }
@@ -72,6 +76,7 @@ min-height:740px;display:flex;flex-direction:column;justify-content:space-betwee
 <a class="nh-tel" href="tel:01045519870">010-4551-9870</a>
 </div>
 <div class="nh-main">
+<div class="nh-text">
 <p class="nh-eyebrow nh-fade nh-d1">남양주 별내 · 아이라이크 인테리어</p>
 <h1 class="nh-h1">
 <span class="nh-mask"><span class="nh-rise">비흡연 목수팀,</span></span>
@@ -81,8 +86,10 @@ min-height:740px;display:flex;flex-direction:column;justify-content:space-betwee
 <p class="nh-lead nh-fade nh-d2">시공 전에 충분히 설명드리고, 공사 중에도 계속 소통해요.</p>
 <div class="nh-cta nh-fade nh-d3">
 <a class="nh-btn nh-primary" href="tel:01045519870">전화 상담 <span class="nh-arr">→</span></a>
-<a class="nh-btn nh-ghost" href="http://pf.kakao.com/_SsxjaG" target="_blank" rel="noopener">카카오톡 상담 <span class="nh-arr">→</span></a>
+<a class="nh-btn nh-ghost" href="http://pf.kakao.com/_SsxjaG/chat" target="_blank" rel="noopener">카카오톡 상담 <span class="nh-arr">→</span></a>
 </div>
+</div>
+<div class="nh-photo nh-fade nh-d3"><img src="/images/work-1.jpg" alt="별내목수 거실 시공 사진"></div>
 <div class="nh-draw"></div>
 </div>
 <div class="nh-facts nh-fade nh-d3" aria-label="소개">
