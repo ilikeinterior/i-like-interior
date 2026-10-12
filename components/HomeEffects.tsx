@@ -25,8 +25,11 @@ export default function HomeEffects() {
     let words: HTMLElement[] = [];
     if (sc && !sc.dataset.nwSplit) {
       sc.dataset.nwSplit = "1";
-      const txt = (sc.textContent || "").trim().split(/\s+/);
-      sc.innerHTML = txt.map((w) => '<span class="nw-w">' + w + "</span> ").join("");
+      const lines = sc.querySelectorAll<HTMLElement>(".nw-scl");
+      lines.forEach((ln) => {
+        const txt = (ln.textContent || "").trim().split(/\s+/);
+        ln.innerHTML = txt.map((w) => '<span class="nw-w">' + w + "</span>").join(" ");
+      });
       words = Array.from(sc.querySelectorAll<HTMLElement>(".nw-w"));
     }
 
