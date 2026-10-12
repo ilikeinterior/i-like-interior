@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import PortfolioFilter from "./PortfolioFilter";
+import HomeEffects from "@/components/HomeEffects";
 
 export default function Home() {
   const html = fs.readFileSync(path.join(process.cwd(), "content", "home.html"), "utf8");
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <PortfolioFilter />
+      <HomeEffects />
     </>
   );
 }

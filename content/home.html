@@ -1,116 +1,292 @@
 <main>
-<style>main{padding-top:0!important}.nh-top{display:none}.nh{padding-top:110px}@media(max-width:1100px){header{position:static!important}.nh{padding-top:16px}}</style>
+<style>main{padding-top:0!important}@media(max-width:1100px){header{position:static!important}}</style>
 <style>
-.nh{--nh-bg:#f5f2ed;--nh-ink:#1c1b19;--nh-mute:#5b584f;--nh-line:#c9c2b4;--nh-acc:#1f3a68;--nh-s3:16px;--nh-s4:24px;--nh-s5:40px;--nh-s6:64px;
-min-height:740px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative;background:var(--nh-bg);color:var(--nh-ink);word-break:keep-all;font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif}
-.nh *{box-sizing:border-box}
-.nh a{text-decoration:none}
-.nh-wrap{padding:0 var(--nh-s5)}
-.nh-top{display:flex;justify-content:space-between;align-items:center;padding:var(--nh-s4) 0}
-.nh-brand{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.5px;color:var(--nh-ink)}
-.nh-brand img{height:30px;width:auto;mix-blend-mode:multiply}
-.nh-tel{font-weight:500;font-size:15px;border-bottom:1px solid var(--nh-line);padding-bottom:2px;color:var(--nh-ink)}
-.nh-main{padding-top:var(--nh-s6);display:grid;grid-template-columns:1fr;gap:var(--nh-s5);align-items:center}
-.nh-photo{margin:0;border-radius:8px;overflow:hidden;aspect-ratio:16/9;background:#e4dfd5}
-.nh-photo img{display:block;width:100%;height:100%;object-fit:cover}
-.nh-eyebrow{font-size:13px;line-height:18px;font-weight:500;letter-spacing:1px;color:var(--nh-mute);margin:0 0 var(--nh-s4)}
-.nh-h1{margin:0 0 var(--nh-s4);color:var(--nh-ink);font-weight:800;letter-spacing:-3px;font-size:clamp(34px,8vw,88px);line-height:1.1}
-.nh-mask{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
-.nh-rise{display:block;transform:translateY(110%);animation:nh-rise 1s cubic-bezier(.16,.84,.24,1) .1s forwards}
-.nh-cycle{position:relative;display:block;height:1.1em;overflow:hidden}
-.nh-cycle span{position:absolute;left:0;top:0;white-space:nowrap;color:var(--nh-acc);transform:translateY(110%);animation:nh-cyc 16s cubic-bezier(.16,.84,.24,1) infinite}
-.nh-cycle span:nth-child(2){animation-delay:4s}
-.nh-cycle span:nth-child(3){animation-delay:8s}
-.nh-cycle span:nth-child(4){animation-delay:12s}
-.nh-proof{display:flex;align-items:center;gap:14px;margin:0 0 var(--nh-s3);font-weight:700;font-size:20px;line-height:1.4;color:var(--nh-ink);letter-spacing:-.3px}
-.nh-proof::before{content:"";width:28px;height:2px;background:var(--nh-acc);flex:none}
-.nh-lead{max-width:30em;color:var(--nh-mute);margin:0 0 var(--nh-s5);font-size:17px;line-height:28px;font-weight:400}
-.nh-cta{display:flex;flex-wrap:wrap;gap:var(--nh-s3)}
-.nh-btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:18px;line-height:1;padding:22px 36px;border-radius:8px;transition:transform .25s ease}
-.nh-arr{display:inline-block;transition:transform .25s ease}
-.nh-btn.nh-primary{background:var(--nh-acc);color:#fff}
-.nh-btn.nh-ghost{border:2px solid var(--nh-ink);color:var(--nh-ink)}
-.nh-btn:hover{transform:translateY(-3px)}
-.nh-btn:hover .nh-arr{transform:translateX(6px)}
-.nh-btn:focus-visible,.nh-top a:focus-visible{outline:2px solid var(--nh-acc);outline-offset:3px}
-.nh-fade{opacity:0;animation:nh-fade .8s ease forwards}
-.nh-d1{animation-delay:.2s}.nh-d2{animation-delay:.4s}.nh-d3{animation-delay:.5s}
-.nh-draw{height:2px;background:var(--nh-acc);transform:scaleX(0);transform-origin:left;margin:var(--nh-s6) 0 0;grid-column:1/-1;animation:nh-draw 1.3s cubic-bezier(.65,0,.2,1) .8s forwards}
-.nh-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0 0 var(--nh-s5)}
-.nh-fact{padding:var(--nh-s4) var(--nh-s3) 0 0;transition:transform .35s ease}
-.nh-fact+.nh-fact{padding-left:var(--nh-s3);border-left:1px solid var(--nh-line)}
-.nh-fact:hover{transform:translateY(-3px)}
-.nh-cap{font-size:13px;line-height:18px;font-weight:500;letter-spacing:1px;color:var(--nh-mute);margin-bottom:8px}
-.nh-ft{font-size:24px;line-height:34px;font-weight:700;letter-spacing:-.5px;color:var(--nh-ink)}
-.nh-band{border-top:1px solid var(--nh-line);overflow:hidden;white-space:nowrap;color:var(--nh-mute);opacity:0;animation:nh-fade .8s ease .6s forwards}
-.nh-track{display:inline-flex;gap:var(--nh-s5);padding:var(--nh-s4) 0;animation:nh-flow 50s linear infinite}
-.nh-track span{font-weight:500;font-size:18px;line-height:1;letter-spacing:2px}
-.nh-track i{font-style:normal}
-@keyframes nh-flow{to{transform:translateX(-50%)}}
-@keyframes nh-rise{to{transform:none}}
-@keyframes nh-fade{to{opacity:1}}
-@keyframes nh-draw{to{transform:scaleX(1)}}
-@keyframes nh-cyc{0%{transform:translateY(110%)}4%{transform:translateY(0)}21%{transform:translateY(0)}25%{transform:translateY(-110%)}100%{transform:translateY(-110%)}}
-@media (min-width:1000px){.nh-main{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)}.nh-h1{font-size:clamp(30px,5vw,84px)}.nh-photo{aspect-ratio:auto;height:clamp(440px,38vw,720px);width:100%;justify-self:end}}
-@media (max-width:640px){
-.nh-wrap{padding:0 var(--nh-s3)}
-.nh-facts{grid-template-columns:1fr}
-.nh-fact+.nh-fact{padding-left:0;border-left:0;border-top:1px solid var(--nh-line);margin-top:var(--nh-s3)}
-.nh-main{padding-top:var(--nh-s5);gap:var(--nh-s4)}
-.nh-photo{aspect-ratio:4/3}
-.nh-btn{flex:1 1 100%;justify-content:center}
-.nh-h1{letter-spacing:-1.5px}
+.nw{--surface-100:#f5f2ed;--surface-200:#ece8db;--ink:#1c1b19;--ink-muted:#5b584f;--line:#c9c2b4;--accent:#1f3a68;--on-accent:#fff;
+--font-sans:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;--space-1:4px;--space-2:8px;--space-3:16px;--space-4:24px;--space-5:40px;--space-6:64px;--space-7:96px;--radius-sm:2px;--radius-md:8px;--radius-pill:999px;background:var(--surface-100);color:var(--ink);font-family:var(--font-sans);-webkit-font-smoothing:antialiased;word-break:keep-all;line-height:normal}
+.nw *{box-sizing:border-box}
+.nw h1,.nw h2,.nw h3,.nw p,.nw ol,.nw figure{margin:0}
+.nw img{max-width:none}
+
+.nw-display-xl{font-size:88px;line-height:92px;font-weight:800;letter-spacing:-3px}
+.nw-title{font-size:24px;line-height:34px;font-weight:700;letter-spacing:-.5px}
+.nw-body{font-size:17px;line-height:28px;font-weight:400}
+.nw-label{font-size:13px;line-height:18px;font-weight:500;letter-spacing:1px}
+  .nw-hero{min-height:740px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}
+  .nw-wrap{padding:0 var(--space-5)}
+
+  .nw-main{padding-top:var(--space-6)}
+  .nw-eyebrow{color:var(--ink-muted);margin:0 0 var(--space-4)}
+  h1{margin:0 0 var(--space-4);color:var(--ink)}
+  h1.nw-display-xl{font-size:clamp(34px,8vw,88px);line-height:1.1}
+  .nw-mask{display:block;overflow:hidden;padding:.1em 0 .1em;margin:-.1em 0 -.1em}
+  .nw-rise{display:block;transform:translateY(110%);animation:nw-rise 1s cubic-bezier(.16,.84,.24,1) .1s forwards}
+
+  /* 둘째 줄: 세 문구가 돌아가며 바뀜 */
+  .nw-cycle{position:relative;display:block;height:1.22em;overflow:hidden}
+  .nw-cycle span{position:absolute;left:0;top:.08em;white-space:nowrap;color:var(--accent);transform:translateY(110%);animation:nw-cyc 16s cubic-bezier(.16,.84,.24,1) infinite}
+  .nw-cycle span:nth-child(2){animation-delay:4s}
+  .nw-cycle span:nth-child(3){animation-delay:8s}
+  .nw-cycle span:nth-child(4){animation-delay:12s}
+
+  .nw-proof{display:flex;align-items:center;gap:14px;margin:0 0 var(--space-3);font:700 20px/1.4 var(--font-sans);color:var(--ink);letter-spacing:-.3px}
+  .nw-proof::before{content:"";width:28px;height:2px;background:var(--accent);flex:none}
+  .nw-lead{max-width:30em;color:var(--ink-muted);margin:0 0 var(--space-5)}
+  .nw-cta{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+  .nw-btn{display:inline-flex;align-items:center;gap:10px;font:700 18px/1 var(--font-sans);padding:22px 36px;border-radius:var(--radius-md);text-decoration:none;transition:transform .25s ease}
+  .nw-btn .nw-arr{display:inline-block;transition:transform .25s ease}
+  .nw-btn.nw-primary{background:var(--accent);color:var(--on-accent)}
+  .nw-btn.nw-ghost{border:2px solid var(--ink);color:var(--ink)}
+  .nw-btn:hover{transform:translateY(-3px)}
+  .nw-btn:hover .nw-arr{transform:translateX(6px)}
+  .nw-btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+  .nw-fade{opacity:0;animation:nw-fade .8s ease forwards}
+  .nw-d1{animation-delay:.2s}.nw-d2{animation-delay:.4s}.nw-d3{animation-delay:.5s}
+
+  .nw-draw{height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;margin:var(--space-6) 0 0;animation:nw-draw 1.3s cubic-bezier(.65,0,.2,1) .8s forwards}
+
+  .nw-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0 0 var(--space-5)}
+  .nw-fact{padding:var(--space-4) var(--space-3) 0 0;transition:transform .35s ease}
+  .nw-fact + .nw-fact{padding-left:var(--space-3);border-left:1px solid var(--line)}
+  .nw-fact:hover{transform:translateY(-3px)}
+  .nw-fact .nw-cap{color:var(--ink-muted);margin-bottom:var(--space-2)}
+  .nw-fact .nw-title{color:var(--ink)}
+
+  /* 맨 아래: 브랜드 가치관이 작게 흘러가는 띠 (공정 목록이 아님) */
+  .nw-band{border-top:1px solid var(--line);overflow:hidden;white-space:nowrap;color:var(--ink-muted);opacity:0;animation:nw-fade .8s ease .6s forwards}
+  .nw-track{display:inline-flex;gap:var(--space-5);padding:var(--space-4) 0;animation:nw-flow 50s linear infinite}
+  .nw-track span{font:500 18px/1 var(--font-sans);letter-spacing:2px}
+  .nw-track i{font-style:normal}
+  @keyframes nw-flow{to{transform:translateX(-50%)}}
+  @keyframes nw-rise{to{transform:none}}
+  @keyframes nw-fade{to{opacity:1}}
+  @keyframes nw-draw{to{transform:scaleX(1)}}
+  @keyframes nw-cyc{
+    0%{transform:translateY(110%)}4%{transform:translateY(0)}
+    21%{transform:translateY(0)}25%{transform:translateY(-110%)}
+    100%{transform:translateY(-110%)}
+  }
+
+  @media (max-width:640px){
+    .nw-wrap{padding:0 var(--space-3)}
+    .nw-facts{grid-template-columns:1fr}
+    .nw-fact + .nw-fact{padding-left:0;border-left:0;border-top:1px solid var(--line);margin-top:var(--space-3)}
+    .nw-main{padding-top:var(--space-5)}
+    .nw-btn{flex:1 1 100%;justify-content:center}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .nw-rise,.nw-fade,.nw-draw,.nw-band{animation:none;transform:none;opacity:1}
+    .nw-cycle span{animation:none}
+    .nw-cycle span:nth-child(1){transform:none}
+    .nw-cycle span:nth-child(n+2){display:none}
+    .nw-track{animation:none}
+    .nw-btn,.nw-btn .nw-arr,.nw-fact{transition:none}
+  }
+/* SECTIONS */.nw-wrap2{padding:0 var(--space-5);max-width:1280px;margin:0 auto}
+.nw-sec{padding:var(--space-6) 0}
+.nw-sec.nw-alt{background:var(--surface-200)}
+.nw-eyebrow{color:var(--accent);margin:0 0 var(--space-3);font-weight:700}
+h2.nw-h{margin:0 0 var(--space-4);font-size:clamp(28px,4.2vw,52px);line-height:1.18;font-weight:800;letter-spacing:-2px;color:var(--ink)}
+h2.nw-h em{font-style:normal;color:var(--accent)}
+.nw-sub{max-width:34em;color:var(--ink-muted);margin:0}
+.nw-rule{height:1px;background:var(--line);margin:var(--space-5) 0}
+.nw-rv{opacity:1;transform:none}
+html.nw-js .nw-rv{opacity:0;transform:translateY(28px);transition:opacity 1.2s cubic-bezier(.22,1,.36,1),transform 1.3s cubic-bezier(.22,1,.36,1)}
+html.nw-js .nw-rv.nw-in{opacity:1;transform:none}
+html.nw-js .nw-vals .nw-rv:nth-child(2){transition-delay:.08s}html.nw-js .nw-vals .nw-rv:nth-child(3){transition-delay:.16s}html.nw-js .nw-vals .nw-rv:nth-child(4){transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.nw-rv{animation:none!important;opacity:1!important;transform:none!important}}
+@media (max-width:640px){.nw-wrap2{padding:0 var(--space-3)}}
+.nw-statement{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.nw-st-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:var(--space-5);align-items:end}
+.nw-st-grid h2.nw-h{margin:0}
+@media (max-width:760px){.nw-st-grid{grid-template-columns:1fr;gap:var(--space-3)}}
+.nw-about .nw-vals{display:grid;grid-template-columns:repeat(2,1fr);margin-top:var(--space-6);border-top:1px solid var(--line)}
+.nw-val{padding:var(--space-4) var(--space-5) var(--space-4) 0;border-bottom:1px solid var(--line)}
+.nw-val:nth-child(even){padding-left:var(--space-5);padding-right:0;border-left:1px solid var(--line)}
+.nw-val .nw-no{color:var(--accent);font-weight:700;margin-bottom:var(--space-2)}
+.nw-val .nw-title{margin-bottom:var(--space-2)}
+.nw-val .nw-body{margin:0;color:var(--ink-muted);max-width:26em}
+.nw-trades{display:flex;align-items:center;gap:var(--space-4);margin-top:var(--space-5);padding:var(--space-3) 0;border-bottom:1px solid var(--line)}
+.nw-own{display:flex;align-items:center;gap:12px;flex:none;padding-right:var(--space-4);border-right:1px solid var(--line)}
+.nw-own .nw-label{color:var(--ink-muted)}
+.nw-own b{background:var(--accent);color:var(--on-accent);font-weight:700;font-size:18px;padding:10px 22px;border-radius:var(--radius-pill)}
+.nw-intro{display:flex;align-items:center;gap:var(--space-3);min-width:0;flex:1}
+.nw-intro .nw-il{flex:none;color:var(--ink-muted)}
+.nw-mq{overflow:hidden;flex:1;min-width:0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.nw-tk{display:inline-flex;gap:10px;white-space:nowrap;animation:nw-tflow 60s linear infinite}
+.nw-tk span{font:500 15px/1 var(--font-sans);color:var(--ink-muted);border:1px solid var(--line);border-radius:var(--radius-pill);padding:9px 18px}
+@keyframes nw-tflow{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.nw-tk{animation:none;flex-wrap:wrap;white-space:normal}}
+@media (max-width:760px){.nw-trades{flex-direction:column;align-items:flex-start;gap:var(--space-3)}.nw-own{border-right:0;padding-right:0}.nw-intro{flex-direction:column;align-items:flex-start;width:100%}.nw-mq{width:100%}}
+.nw-team{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);margin-top:var(--space-6);align-items:start}
+.nw-title2{margin:0 0 var(--space-3);font-size:clamp(24px,2.6vw,34px);line-height:1.3;font-weight:800;letter-spacing:-1px}
+.nw-people{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3)}
+.nw-person{background:var(--surface-200);border-radius:var(--radius-sm);padding:var(--space-4);border-top:2px solid var(--accent)}
+.nw-person .nw-role{color:var(--ink-muted);margin-bottom:var(--space-2)}
+.nw-person .nw-yrs{font-size:24px;line-height:1.3;font-weight:800;letter-spacing:-1px;margin-bottom:var(--space-3)}
+.nw-person .nw-body{margin:0;color:var(--ink-muted)}
+.nw-area{color:var(--ink-muted);margin:var(--space-5) 0 0}
+@media (max-width:760px){
+  .nw-about .nw-vals{grid-template-columns:1fr}
+  .nw-val,.nw-val:nth-child(even){padding:var(--space-4) 0;border-left:0}
+  .nw-team{grid-template-columns:1fr;gap:var(--space-4)}
+  .nw-people{grid-template-columns:1fr}
 }
-@media (prefers-reduced-motion:reduce){
-.nh-rise,.nh-fade,.nh-draw,.nh-band{animation:none;transform:none;opacity:1}
-.nh-cycle span{animation:none}
-.nh-cycle span:nth-child(1){transform:none}
-.nh-cycle span:nth-child(n+2){display:none}
-.nh-track{animation:none}
-.nh-btn,.nh-arr,.nh-fact{transition:none}
-}
+.nw-val.nw-key{background:var(--surface-200);box-shadow:inset 3px 0 0 var(--accent);padding-left:var(--space-4)}
+.nw-val.nw-key .nw-title{font-size:28px;letter-spacing:-1px}
+@media (max-width:760px){.nw-val.nw-key{padding:var(--space-4)}}
+.nw-why .nw-trio{display:grid;grid-template-columns:repeat(3,1fr);margin-top:var(--space-6);border-top:1px solid var(--line)}
+.nw-tr{padding:var(--space-4) var(--space-4) 0 0}
+.nw-tr + .nw-tr{padding-left:var(--space-4);border-left:1px solid var(--line)}
+.nw-tr .nw-no{color:var(--accent);font-weight:700;margin-bottom:var(--space-2)}
+.nw-tr .nw-title{margin-bottom:var(--space-2)}
+.nw-tr .nw-body{margin:0;color:var(--ink-muted)}
+@media (max-width:760px){.nw-why .nw-trio{grid-template-columns:1fr}.nw-tr,.nw-tr + .nw-tr{padding:var(--space-4) 0;border-left:0;border-bottom:1px solid var(--line)}}
+.nw-progress{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;z-index:50}
+
+.nw-hero-row{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--space-5);align-items:center}
+.nw-hphoto{position:relative;margin-top:var(--space-6)}
+.nw-hp-frame{overflow:hidden;aspect-ratio:4/5;border-radius:var(--radius-sm);clip-path:inset(0 0 100% 0);animation:nw-wipe 1.4s cubic-bezier(.65,0,.2,1) .3s forwards;background:var(--surface-200)}
+.nw-hp-img{width:100%;height:118%;object-fit:cover;display:block;transform:scale(1.18);animation:nw-kb 2.4s cubic-bezier(.16,.84,.24,1) .3s forwards}
+.nw-hp-corner{position:absolute;right:-14px;top:-14px;width:84px;height:84px;border-top:2px solid var(--accent);border-right:2px solid var(--accent);opacity:0;animation:nw-fade .8s ease 1.4s forwards}
+@keyframes nw-wipe{to{clip-path:inset(0 0 0 0)}}
+@keyframes nw-kb{to{transform:scale(1)}}
+
+.nw-photos{padding:var(--space-6) 0 var(--space-7);overflow:hidden}
+.nw-ph-head{margin-bottom:var(--space-5)}
+.nw-ph-grid{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:var(--space-4);align-items:start}
+.nw-ph{will-change:translate;margin:0;overflow:hidden;border-radius:var(--radius-sm);background:var(--surface-200)}
+.nw-ph img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;transform:scale(1.12);transition:transform 1.8s cubic-bezier(.22,1,.36,1)}
+.nw-ph:hover img{transform:scale(1.2)}
+.nw-ph.nw-b{margin-top:var(--space-6)}.nw-ph.nw-c{margin-top:var(--space-4)}
+
+@media (max-width:760px){.nw-hero-row{grid-template-columns:1fr}.nw-hphoto{margin-top:var(--space-4)}.nw-ph-grid{grid-template-columns:1fr}.nw-ph.nw-b,.nw-ph.nw-c{margin-top:0}}
+@media (prefers-reduced-motion:reduce){.nw-hp-frame{clip-path:none;animation:none}.nw-hp-img{animation:none;transform:none}.nw-hp-corner{animation:none;opacity:1}html.nw-js .nw-rv{opacity:1;transform:none;transition:none}}
+
+.nw-how-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--space-6);align-items:start}
+.nw-how-side{position:sticky;top:96px}
+.nw-steps{list-style:none;margin:0;padding:0 0 0 var(--space-5);position:relative}
+.nw-step{display:flex;gap:var(--space-4);padding:var(--space-4) 0 var(--space-5);opacity:.28;transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1);transform:translateX(0)}
+.nw-step.nw-on{opacity:1;transform:translateX(8px)}
+.nw-step .nw-sn{font:800 14px/1 var(--font-sans);letter-spacing:1px;color:var(--accent);padding-top:10px;min-width:28px}
+.nw-step .nw-title{font-size:26px;line-height:1.3;margin-bottom:var(--space-2)}
+.nw-step .nw-body{margin:0;color:var(--ink-muted);max-width:28em}
+.nw-stline{position:absolute;left:0;top:var(--space-4);bottom:var(--space-5);width:2px;background:var(--line)}
+.nw-stline b{display:block;width:100%;height:100%;background:var(--accent);transform-origin:top;transform:scaleY(0)}
+.nw-nums{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.nw-nums-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:var(--space-4)}
+.nw-num{padding:var(--space-4) var(--space-4) var(--space-3) 0}
+.nw-num + .nw-num{padding-left:var(--space-4);border-left:1px solid var(--line)}
+.nw-num .nw-big{font-weight:800;font-size:clamp(56px,8vw,112px);line-height:1;letter-spacing:-4px;color:var(--ink);font-variant-numeric:tabular-nums}
+.nw-num .nw-big small{font-size:.34em;letter-spacing:-1px;margin-left:6px;color:var(--accent)}
+.nw-num .nw-body{margin:var(--space-3) 0 0;color:var(--ink-muted)}
+@media (max-width:760px){.nw-how-grid{grid-template-columns:1fr;gap:var(--space-4)}.nw-how-side{position:static}.nw-nums-grid{grid-template-columns:1fr}.nw-num + .nw-num{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+@media (prefers-reduced-motion:reduce){.nw-step{opacity:1;transition:none;transform:none}.nw-stline b{transform:none}}
+
+.nw-scrubsec{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:var(--space-7) 0}
+.nw-scrub{margin:0;font-weight:800;font-size:clamp(30px,4.6vw,60px);line-height:1.35;letter-spacing:-2px}.nw-scl{display:block}
+.nw-scrub .nw-w{color:var(--ink);opacity:.16;transition:opacity .5s cubic-bezier(.22,1,.36,1)}
+.nw-scrub .nw-w.nw-on{opacity:1}
+.nw-ln{display:block;overflow:hidden;padding:.12em 0 .12em;margin:-.12em 0 -.12em}
+.nw-li{display:block}
+html.nw-js h2.nw-h.nw-rv{opacity:1;transform:none;transition:none}
+html.nw-js h2.nw-h.nw-rv .nw-li{transform:translateY(112%);transition:transform 1.4s cubic-bezier(.22,1,.36,1)}
+html.nw-js h2.nw-h.nw-rv.nw-in .nw-li{transform:none}
+html.nw-js h2.nw-h.nw-rv .nw-ln:nth-child(2) .nw-li{transition-delay:.12s}
+html.nw-js h2.nw-h.nw-rv .nw-ln:nth-child(3) .nw-li{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.nw-scrub .nw-w{opacity:1;transition:none}html.nw-js h2.nw-h.nw-rv .nw-li{transform:none;transition:none}}
+
+.nw-slides{position:absolute;inset:0}
+.nw-hp-frame{position:relative}
+.nw-hp-frame .nw-hp-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:none;animation:none}
+.nw-slides .nw-sl{opacity:0;animation:nw-sl 21s cubic-bezier(.4,0,.2,1) infinite}
+.nw-slides .nw-s2{animation-delay:3s}.nw-slides .nw-s3{animation-delay:6s}.nw-slides .nw-s4{animation-delay:9s}.nw-slides .nw-s5{animation-delay:12s}.nw-slides .nw-s6{animation-delay:15s}.nw-slides .nw-s7{animation-delay:18s}
+@keyframes nw-sl{0%{opacity:0;transform:scale(1.14)}3.6%{opacity:1}14.3%{opacity:1;transform:scale(1.02)}17.9%{opacity:0;transform:scale(1)}100%{opacity:0;transform:scale(1.14)}}
+.nw-sbars{position:absolute;left:var(--space-3);right:var(--space-3);bottom:var(--space-3);display:flex;gap:6px;z-index:2}
+.nw-sbars i{flex:1;height:2px;background:rgba(255,255,255,.38);overflow:hidden;border-radius:2px;position:relative}
+.nw-sbars i::after{content:"";position:absolute;inset:0;background:#fff;transform:scaleX(0);transform-origin:left;animation:nw-sb 21s linear infinite}
+.nw-sbars i:nth-child(2)::after{animation-delay:3s}.nw-sbars i:nth-child(3)::after{animation-delay:6s}.nw-sbars i:nth-child(4)::after{animation-delay:9s}.nw-sbars i:nth-child(5)::after{animation-delay:12s}.nw-sbars i:nth-child(6)::after{animation-delay:15s}.nw-sbars i:nth-child(7)::after{animation-delay:18s}
+@keyframes nw-sb{0%{transform:scaleX(0)}14.3%{transform:scaleX(1)}14.31%,100%{transform:scaleX(0)}}
+@media (prefers-reduced-motion:reduce){.nw-slides .nw-sl{animation:none;opacity:0}.nw-slides .nw-s1{opacity:1}.nw-sbars{display:none}}
+.nw-slides .nw-s1{object-position:24% 50%}.nw-slides .nw-s2{object-position:55% 50%}
+
+/* 블로그 구역: 검은 배경 -> 밝은 배경 */
+main .blog-section{background:#ece8db;color:#1c1b19}
+main .blog-section .section-head h2{color:#1c1b19}
+main .blog-section .section-head h2 .accent{color:#1f3a68}
+main .blog-section .section-head .label{color:#1f3a68}
+main .blog-section .section-head p{color:#5b584f}
+main .blog-section .blog-item{background:#f5f2ed;border:1px solid #c9c2b4;color:#1c1b19}
+main .blog-section .blog-item:hover{background:#fff;border-color:#1f3a68;color:#1c1b19}
+main .blog-section .blog-item .b-price{color:#1f3a68}
+main .blog-section .blog-item .b-title{color:#1c1b19}
+main .blog-section .blog-item .b-arrow{color:#1f3a68}
+main .blog-section .blog-cta-box{background:#1f3a68}
+main .blog-section .blog-cta-box .txt{color:#fff}
+main .blog-section .blog-cta-box .btn{background:#fff;color:#1c1b19}
+main .blog-section .blog-cta-box .btn:hover{background:#f5f2ed}
+/* 아래쪽 중복 푸터(링크 없는 쪽) 숨김 */
+footer.footer{display:none}
+.nx-blk{display:inline-block;margin-top:18px;font-weight:700;color:#1c1b19;border-bottom:2px solid #1c1b19;padding-bottom:3px;text-decoration:none}
+.nw-hero{padding-top:110px}.nw-hero .nw-main{padding-top:var(--space-5)}.nw .nw-label{font-family:var(--font-sans);text-transform:none;color:inherit}.nw .nw-eyebrow{color:var(--ink-muted)}.nw .nw-sec .nw-eyebrow,.nw .nw-about .nw-eyebrow{color:var(--accent)}@media(max-width:1100px){.nw-hero{padding-top:16px}}
 </style>
-<section class="nh" id="top">
-<div class="nh-wrap">
-<div class="nh-top">
-<a class="nh-brand" href="/"><img src="/images/og-image.png" alt="" width="66" height="30">별내목수</a>
-<a class="nh-tel" href="tel:01045519870">010-4551-9870</a>
-</div>
-<div class="nh-main">
-<div class="nh-text">
-<p class="nh-eyebrow nh-fade nh-d1">남양주 별내 · 아이라이크 인테리어</p>
-<h1 class="nh-h1">
-<span class="nh-mask"><span class="nh-rise">비흡연 목수팀,</span></span>
-<span class="nh-cycle"><span>설명하는 목수.</span><span>순서 잡는 목수.</span><span>예산 맞추는 목수.</span><span>책임지는 목수.</span></span>
-</h1>
-<p class="nh-proof nh-fade nh-d2">처음부터 비흡연자만 함께해 왔습니다.</p>
-<p class="nh-lead nh-fade nh-d2">시공 전에 충분히 설명드리고, 공사 중에도 계속 소통해요.</p>
-<div class="nh-cta nh-fade nh-d3">
-<a class="nh-btn nh-primary" href="tel:01045519870">전화 상담 <span class="nh-arr">→</span></a>
-<a class="nh-btn nh-ghost" href="http://pf.kakao.com/_SsxjaG/chat" target="_blank" rel="noopener">카카오톡 상담 <span class="nh-arr">→</span></a>
-</div>
-</div>
-<div class="nh-photo nh-fade nh-d3"><img src="/images/work-1.jpg" alt="별내목수 거실 시공 사진"></div>
-<div class="nh-draw"></div>
-</div>
-<div class="nh-facts nh-fade nh-d3" aria-label="소개">
-<div class="nh-fact"><div class="nh-cap">경력</div><div class="nh-ft">아버지 밑에서 배운 25년차 목수</div></div>
-<div class="nh-fact"><div class="nh-cap">팀</div><div class="nh-ft">30~40대 젊은 팀이 직접 시공해요</div></div>
-<div class="nh-fact"><div class="nh-cap">원칙</div><div class="nh-ft">설명 먼저, 시공은 그다음</div></div>
-<div class="nh-fact"><div class="nh-cap">결제</div><div class="nh-ft">카드 결제 가능해요</div></div>
-</div>
-</div>
-<div class="nh-band" aria-hidden="true">
-<div class="nh-track">
-<span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
-<span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
-<span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
-<span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
-<span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
-<span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
-</div>
-</div>
+<div class="nw">
+<div class="nw-progress" aria-hidden="true"></div>
+<section class="nw-hero">
+  <div class="nw-wrap">
+    <div class="nw-hero-row"><div class="nw-main">
+      <p class="nw-label nw-eyebrow nw-fade nw-d1">남양주 별내 · 아이라이크 인테리어</p>
+      <h1 class="nw-display-xl">
+        <span class="nw-mask"><span class="nw-rise">비흡연 목수팀,</span></span>
+        <span class="nw-cycle"><span>설명하는 목수.</span><span>순서 잡는 목수.</span><span>예산 맞추는 목수.</span><span>책임지는 목수.</span></span>
+      </h1>
+      <p class="nw-proof nw-fade nw-d2">처음부터 비흡연자만 함께해 왔습니다.</p>
+      <p class="nw-body nw-lead nw-fade nw-d2">시공 전에 충분히 설명드리고, 공사 중에도 계속 소통해요.</p>
+      <div class="nw-cta nw-fade nw-d3">
+        <a class="nw-btn nw-primary" href="tel:01045519870">전화 상담 <span class="nw-arr">→</span></a>
+        <a class="nw-btn nw-ghost" href="http://pf.kakao.com/_SsxjaG" target="_blank" rel="noopener">카카오톡 상담 <span class="nw-arr">→</span></a>
+      </div>
+      <div class="nw-draw"></div>
+    </div>
+      <div class="nw-hphoto"><div class="nw-hp-frame"><div class="nw-slides">
+<img class="nw-hp-img nw-sl nw-s1" fetchpriority="high" decoding="async" width="1360" height="1700" alt="우드 수납장과 라인 조명이 있는 거실" src="/images/hero/hero-1.jpg">
+<img class="nw-hp-img nw-sl nw-s2" loading="lazy" decoding="async" width="1360" height="1700" alt="저녁 거실 TV 벽과 간접조명" src="/images/hero/hero-2.jpg">
+<img class="nw-hp-img nw-sl nw-s3" loading="lazy" decoding="async" width="1360" height="1700" alt="따뜻한 마루와 간접조명" src="/images/hero/hero-3.jpg">
+<img class="nw-hp-img nw-sl nw-s4" loading="lazy" decoding="async" width="1360" height="1700" alt="밝은 거실과 베란다" src="/images/hero/hero-4.jpg">
+<img class="nw-hp-img nw-sl nw-s5" loading="lazy" decoding="async" width="1360" height="1700" alt="곡선 코너의 흰색 루버 벽" src="/images/hero/hero-5.jpg">
+<img class="nw-hp-img nw-sl nw-s6" loading="lazy" decoding="async" width="1360" height="1700" alt="LED 간접조명이 있는 블루 슬랫 벽" src="/images/hero/hero-6.jpg">
+<img class="nw-hp-img nw-sl nw-s7" loading="lazy" decoding="async" width="1360" height="1700" alt="아치 유리문이 있는 오크 합판 벽" src="/images/hero/hero-7.jpg">
+
+</div><div class="nw-sbars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><i class="nw-hp-corner"></i></div>
+    </div>
+
+    <div class="nw-facts nw-fade nw-d3" aria-label="소개">
+      <div class="nw-fact"><div class="nw-label nw-cap">경력</div><div class="nw-title">아버지 밑에서 배운 25년차 목수</div></div>
+      <div class="nw-fact"><div class="nw-label nw-cap">팀</div><div class="nw-title">30~40대 젊은 팀이 직접 시공해요</div></div>
+      <div class="nw-fact"><div class="nw-label nw-cap">원칙</div><div class="nw-title">설명 먼저, 시공은 그다음</div></div>
+      <div class="nw-fact"><div class="nw-label nw-cap">결제</div><div class="nw-title">카드 결제 가능해요</div></div>
+    </div>
+  </div>
+
+  <div class="nw-band" aria-hidden="true">
+    <div class="nw-track">
+      <span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
+      <span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
+      <span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
+      <span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
+      <span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
+      <span>비흡연</span><i>·</i><span>소통</span><i>·</i><span>예산 안에서</span><i>·</i><span>끝까지 책임</span><i>·</i><span>카드 결제</span><i>·</i>
+    </div>
+  </div>
 </section>
+
+<section class="nw-sec nw-alt nw-statement">
+  <div class="nw-wrap2 nw-st-grid">
+    <h2 class="nw-h nw-rv">시공 전에 설명하고,<br><em>공사 중에도 소통합니다.</em></h2>
+    <p class="nw-body nw-sub nw-rv">왜 이 순서로 작업하는지, 왜 이 자재를 쓰는지 현장에서 직접 설명드립니다. 궁금한 건 바로 묻고 바로 답할 수 있는 팀입니다.</p>
+  </div>
+</section>
+</div>
 <style>
 .pl{--pl-bg:#ece7de;--pl-ink:#1c1b19;--pl-acc:#1f3a68;--pl-line:#c9c2b4;background:var(--pl-bg);border-top:1px solid var(--pl-line);padding:64px 0 24px;color:var(--pl-ink);font-family:'Noto Sans KR',sans-serif}
 .pl-w{max-width:1200px;margin:0 auto;padding:0 40px}
@@ -132,67 +308,73 @@ min-height:740px;display:flex;flex-direction:column;justify-content:space-betwee
 <ol class="pl-list"><li><b>01</b>견적서와 계약서는 파일로 드립니다.</li><li><b>02</b>견적에 없던 추가 비용은 사전에 설명드리고 진행합니다.</li><li><b>03</b>시공 사례의 지역과 금액을 투명하게 알려드립니다.</li><li class="hl"><b>04</b>결제는 모든 현장에서 카드로 하실 수 있습니다.</li><li><b>05</b>사업자등록 완료, 사업자번호는 요청하시면 안내해 드립니다.</li></ol>
 <div class="pl-strip"><figure><img src="/images/strip-1.jpg" alt="시공 현장 거실 간접조명과 오크 수납장"></figure><figure><img src="/images/strip-2.jpg" alt="시공 현장 거실 우물천장 간접조명"></figure><figure><img src="/images/strip-3.jpg" alt="가구 연출 이미지"><figcaption>가구 연출 이미지</figcaption></figure></div>
 </div></section>
-<div class="seam"></div>
-<style>
-.nx-sec{--nx-bg:#f5f2ed;--nx-s200:#ece8db;--nx-ink:#1c1b19;--nx-mute:#5b584f;--nx-line:#c9c2b4;--nx-acc:#1f3a68}
-.nx-w2{padding:0 40px;max-width:1280px;margin:0 auto}
-.nx-sec{padding:64px 0;background:var(--nx-bg);color:var(--nx-ink);word-break:keep-all}.nx-sec.nx-alt{background:var(--nx-s200)}
-.nx-eb{font-size:13px;line-height:18px;font-weight:700;letter-spacing:1px;color:var(--nx-acc);margin:0 0 16px}
-h2.nx-h{margin:0 0 24px;font-size:clamp(28px,4.2vw,52px);line-height:1.18;font-weight:800;letter-spacing:-2px}
-h2.nx-h em{font-style:normal;color:var(--nx-acc)}
-.nx-sub{max-width:34em;color:var(--nx-mute);font-size:17px;line-height:28px}
-.nx-vals{display:grid;grid-template-columns:repeat(2,1fr);margin-top:64px;border-top:1px solid var(--nx-line)}
-.nx-val{padding:24px 40px 24px 0;border-bottom:1px solid var(--nx-line)}
-.nx-val:nth-child(even){padding:24px 0 24px 40px;border-left:1px solid var(--nx-line)}
-.nx-val .nx-no{color:var(--nx-acc);font-weight:700;font-size:13px;letter-spacing:1px;margin-bottom:8px}
-.nx-val .nx-t{font-size:24px;line-height:34px;font-weight:700;letter-spacing:-.5px;margin-bottom:8px}
-.nx-val p{color:var(--nx-mute);font-size:17px;line-height:28px;max-width:26em}
-.nx-val.nx-key{background:var(--nx-s200);box-shadow:inset 3px 0 0 var(--nx-acc);padding-left:24px}
-.nx-val.nx-key .nx-t{font-size:28px;letter-spacing:-1px}
-.nx-trades{display:flex;align-items:center;gap:24px;margin-top:40px;padding:16px 0;border-bottom:1px solid var(--nx-line)}
-.nx-own{display:flex;align-items:center;gap:12px;flex:none;padding-right:24px;border-right:1px solid var(--nx-line)}
-.nx-own .nx-l{font-size:13px;color:var(--nx-mute);letter-spacing:1px}
-.nx-own b{background:var(--nx-acc);color:#fff;font-weight:700;font-size:18px;padding:10px 22px;border-radius:999px}
-.nx-intro{display:flex;align-items:center;gap:16px;min-width:0;flex:1}.nx-intro .nx-l{flex:none;font-size:13px;color:var(--nx-mute);letter-spacing:1px}
-.nx-mq{overflow:hidden;flex:1;min-width:0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.nx-tk{display:inline-flex;gap:10px;white-space:nowrap;animation:nxflow 60s linear infinite}
-.nx-tk span{font-size:15px;color:var(--nx-mute);border:1px solid var(--nx-line);border-radius:999px;padding:9px 18px}
-@keyframes nxflow{to{transform:translateX(-50%)}}
-.nx-team{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:64px;align-items:start}
-.nx-team h3{margin:0 0 16px;font-size:clamp(24px,2.6vw,34px);line-height:1.3;font-weight:800;letter-spacing:-1px}
-.nx-people{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.nx-person{background:var(--nx-s200);padding:24px;border-top:2px solid var(--nx-acc)}
-.nx-person .nx-role{font-size:13px;color:var(--nx-mute);letter-spacing:1px;margin-bottom:8px}
-.nx-person .nx-yrs{font-size:24px;line-height:1.3;font-weight:800;letter-spacing:-1px;margin-bottom:16px}
-.nx-person p{color:var(--nx-mute);font-size:17px;line-height:28px}
-.nx-area{font-size:13px;letter-spacing:1px;color:var(--nx-mute);margin-top:40px}
-.nx-trio{display:grid;grid-template-columns:repeat(3,1fr);margin-top:64px;border-top:1px solid var(--nx-line)}
-.nx-tr{padding:24px 24px 0 0}.nx-tr+.nx-tr{padding-left:24px;border-left:1px solid var(--nx-line)}
-.nx-tr .nx-no{color:var(--nx-acc);font-weight:700;font-size:13px;letter-spacing:1px;margin-bottom:8px}
-.nx-tr .nx-t{font-size:24px;line-height:34px;font-weight:700;letter-spacing:-.5px;margin-bottom:8px}
-.nx-tr p{color:var(--nx-mute);font-size:17px;line-height:28px}
-.nx-blk{display:inline-block;margin-top:18px;font-weight:700;color:#1c1b19;border-bottom:2px solid #1c1b19;padding-bottom:3px;text-decoration:none}
-@media(max-width:760px){.nx-w2{padding:0 16px}.nx-team,.nx-people,.nx-trio,.nx-vals{grid-template-columns:1fr}.nx-team{gap:24px}
-.nx-val,.nx-val:nth-child(even){padding:24px 0;border-left:0}.nx-val.nx-key{padding:24px}.nx-trades{flex-direction:column;align-items:flex-start}.nx-own{border-right:0;padding-right:0}.nx-intro{flex-direction:column;align-items:flex-start;width:100%}.nx-mq{width:100%}
-.nx-tr,.nx-tr+.nx-tr{padding:24px 0;border-left:0;border-bottom:1px solid var(--nx-line)}}
-@media(prefers-reduced-motion:reduce){.nx-tk{animation:none}}
-</style>
-<section class="nx-sec" id="about"><div class="nx-w2">
-<p class="nx-eb">ABOUT US</p>
-<h2 class="nx-h">시공만 하지 않습니다.<br><em>순서와 우선순위</em>를 함께 정합니다.</h2>
-<p class="nx-sub">별내목수는 단순히 자재를 붙이는 팀이 아니라, 예산 안에서 무엇을 먼저 해야 하는지 설명하고 함께 결정하는 팀입니다.</p>
-<div class="nx-vals">
-<div class="nx-val nx-key"><div class="nx-no">01</div><div class="nx-t">처음부터 비흡연자만</div><p>작업 중에 참는 게 아니라, 담배를 피우는 사람은 처음부터 팀에 두지 않았습니다.</p></div>
-<div class="nx-val"><div class="nx-no">02</div><div class="nx-t">설명하는 목수</div><p>왜 이 순서로 작업하는지, 왜 이 자재를 쓰는지 현장에서 직접 설명합니다.</p></div>
-<div class="nx-val"><div class="nx-no">03</div><div class="nx-t">소통되는 팀</div><p>30~40대 목수들이 아버지와 함께 움직여서 빠르게 묻고 답할 수 있습니다.</p></div>
-<div class="nx-val"><div class="nx-no">04</div><div class="nx-t">공정별로 맡기는 방식</div><p>목공은 저희와 계약하시고, 나머지 공정은 팀을 소개해 드립니다. 계약은 공정마다 따로 하십니다.</p></div>
+<div class="nw">
+<section class="nw-sec nw-about" id="about">
+  <div class="nw-wrap2">
+    <p class="nw-label nw-eyebrow">ABOUT US</p>
+    <h2 class="nw-h nw-rv">시공만 하지 않습니다.<br><em>순서와 우선순위</em>를 함께 정합니다.</h2>
+    <p class="nw-body nw-sub nw-rv">별내목수는 단순히 자재를 붙이는 팀이 아니라, 예산 안에서 무엇을 먼저 해야 하는지 설명하고 함께 결정하는 팀입니다.</p>
+
+    <div class="nw-vals">
+      <div class="nw-val nw-key nw-rv"><div class="nw-label nw-no">01</div><div class="nw-title">처음부터 비흡연자만</div><p class="nw-body">작업 중 흡연 휴식이 없는 게 아니라, 흡연자는 처음부터 팀에 두지 않았습니다. 소개해 드리는 전기·필름·도배 팀도 같은 기준입니다.</p></div>
+      <div class="nw-val nw-rv"><div class="nw-label nw-no">02</div><div class="nw-title">설명하는 목수</div><p class="nw-body">왜 이 순서로 작업하는지, 왜 이 자재를 쓰는지 현장에서 직접 설명합니다.</p></div>
+      <div class="nw-val nw-rv"><div class="nw-label nw-no">03</div><div class="nw-title">소통되는 팀</div><p class="nw-body">30~40대 목수들이 아버지와 함께 움직여서 빠르게 묻고 답할 수 있습니다.</p></div>
+      <div class="nw-val nw-rv"><div class="nw-label nw-no">04</div><div class="nw-title">공정별로 맡기는 방식</div><p class="nw-body">목공은 저희와 계약하시고, 나머지 공정은 팀을 소개해 드립니다. 계약은 공정마다 따로 하시고, 원하시면 전체를 맡아서 하는 팀도 연결해 드립니다.</p></div>
+    </div>
+
+    <div class="nw-trades nw-rv" aria-label="직접 시공하는 공정과 소개해 드리는 공정">
+      <div class="nw-own"><span class="nw-label">직접 시공</span><b>목공</b></div>
+      <div class="nw-intro">
+        <span class="nw-label nw-il">소개해 드리는 공정</span>
+        <div class="nw-mq" aria-hidden="true"><div class="nw-tk"><span>전기</span><span>필름</span><span>도배</span><span>철거</span><span>설비</span><span>샷시</span><span>타일</span><span>도장</span><span>바닥</span><span>욕실</span><span>가구</span><span>조명</span><span>입주 청소</span><span>전기</span><span>필름</span><span>도배</span><span>철거</span><span>설비</span><span>샷시</span><span>타일</span><span>도장</span><span>바닥</span><span>욕실</span><span>가구</span><span>조명</span><span>입주 청소</span></div></div>
+      </div>
+    </div>
+
+    <div class="nw-team">
+      <div class="nw-team-head nw-rv">
+        <p class="nw-label nw-eyebrow">TEAM</p>
+        <h3 class="nw-title2">아버지의 손기술과<br>아들의 트렌드 감각이 만납니다</h3>
+        <p class="nw-body nw-sub">오래된 노하우와 요즘 자재·시공 방식을 함께 씁니다. 기본 3~4명이 함께 움직이고, 현장 규모에 따라 10명 이상도 구성합니다.</p>
+      </div>
+      <div class="nw-people">
+        <div class="nw-person nw-rv"><div class="nw-role nw-label">대표 · 고승휘</div><div class="nw-yrs">아버지 밑에서 배운<br>25년차 목수</div><p class="nw-body">인테리어 목공 전반, 현장 소통과 일정 관리를 맡습니다.</p></div>
+        <div class="nw-person nw-rv"><div class="nw-role nw-label">아버지</div><div class="nw-yrs">25년이 넘는<br>경력의 목수</div><p class="nw-body">오랜 손기술로 디테일과 마감 완성도를 책임집니다.</p></div>
+      </div>
+    </div>
+    <p class="nw-label nw-area nw-rv">활동 지역 · 남양주, 일산, 분당 등 서울·경기 (상황에 따라 지방 출장)</p>
+  </div>
+</section>
+<section class="nw-sec nw-how" id="how">
+  <div class="nw-wrap2 nw-how-grid">
+    <div class="nw-how-side">
+      <p class="nw-label nw-eyebrow">HOW IT WORKS</p>
+      <h2 class="nw-h">현장 이야기부터,<br><em>시공 후 책임</em>까지.</h2>
+      <p class="nw-body nw-sub">견적 숫자보다 먼저 현장 상황을 듣고, 시공이 끝난 뒤에도 책임집니다.</p>
+    </div>
+    <ol class="nw-steps">
+      <li class="nw-step"><span class="nw-sn">01</span><div><div class="nw-title">현장 상황 듣기</div><p class="nw-body">견적이 아니라 현장 상황부터 들어봅니다.</p></div></li>
+      <li class="nw-step"><span class="nw-sn">02</span><div><div class="nw-title">순서와 우선순위 정하기</div><p class="nw-body">예산 안에서 무엇을 먼저 해야 하는지 설명하고 함께 결정합니다.</p></div></li>
+      <li class="nw-step"><span class="nw-sn">03</span><div><div class="nw-title">설명하며 시공하기</div><p class="nw-body">왜 이 순서로 작업하는지, 왜 이 자재를 쓰는지 현장에서 직접 설명합니다.</p></div></li>
+      <li class="nw-step"><span class="nw-sn">04</span><div><div class="nw-title">끝까지 책임지기</div><p class="nw-body">작업 중 생긴 손상이나 실수는 저희 쪽 책임 범위 안에서 끝까지 보완합니다.</p></div></li>
+      <i class="nw-stline"><b></b></i>
+    </ol>
+  </div>
+</section>
+<section class="nw-sec nw-alt nw-scrubsec">
+  <div class="nw-wrap2">
+    <p class="nw-label nw-eyebrow">별내목수는</p>
+    <p class="nw-scrub" data-scrub><span class="nw-scl">비흡연 목수팀이</span><span class="nw-scl">설명하고, 소통하고,</span><span class="nw-scl">끝까지 책임집니다.</span></p>
+  </div>
+</section>
+<section class="nw-photos" aria-label="현장 사진">
+  <div class="nw-ph-head nw-wrap2"><p class="nw-label nw-eyebrow">현장 사진</p><h2 class="nw-h nw-rv">말보다 현장이 먼저 보이게.</h2></div>
+  <div class="nw-ph-grid nw-wrap2">
+    <figure class="nw-ph nw-a"><img loading="lazy" decoding="async" alt="" src="/images/hero/strip-1.jpg"></figure>
+    <figure class="nw-ph nw-b"><img loading="lazy" decoding="async" alt="" src="/images/hero/strip-2.jpg"></figure>
+    <figure class="nw-ph nw-c"><img loading="lazy" decoding="async" alt="" src="/images/hero/strip-3.jpg"></figure>
+  </div>
+</section>
 </div>
-<div class="nx-trades"><div class="nx-own"><span class="nx-l">직접 시공</span><b>목공</b></div>
-<div class="nx-intro"><span class="nx-l">소개해 드리는 공정</span><div class="nx-mq" aria-hidden="true"><div class="nx-tk"><span>전기</span><span>필름</span><span>도배</span><span>철거</span><span>설비</span><span>샷시</span><span>타일</span><span>도장</span><span>바닥</span><span>욕실</span><span>가구</span><span>조명</span><span>입주 청소</span><span>전기</span><span>필름</span><span>도배</span><span>철거</span><span>설비</span><span>샷시</span><span>타일</span><span>도장</span><span>바닥</span><span>욕실</span><span>가구</span><span>조명</span><span>입주 청소</span></div></div></div></div>
-<div class="nx-team"><div><p class="nx-eb">TEAM</p><h3>아버지의 손기술과<br>아들의 트렌드 감각이 만납니다</h3><p class="nx-sub">오래된 노하우와 요즘 자재·시공 방식을 함께 씁니다. 기본 3~4명이 함께 움직이고, 현장 규모에 따라 10명 이상도 구성합니다.</p></div>
-<div class="nx-people"><div class="nx-person"><div class="nx-role">아들</div><div class="nx-yrs">아버지 밑에서 배운<br>25년차 목수</div><p>인테리어 목공 전반, 현장 소통과 일정 관리를 맡습니다.</p></div>
-<div class="nx-person"><div class="nx-role">아버지</div><div class="nx-yrs">25년이 넘는<br>경력의 목수</div><p>오랜 손기술로 디테일과 마감 완성도를 책임집니다.</p></div></div></div>
-<p class="nx-area">활동 지역 · 남양주, 일산, 분당 등 서울·경기 (상황에 따라 지방 출장)</p></div></section>
 <div class="seam"></div>
 <section class="section portfolio-section" id="portfolio">
 <div class="section-head">
@@ -569,15 +751,22 @@ h2.nx-h em{font-style:normal;color:var(--nx-acc)}
 </div>
 </section>
 <div class="seam"></div>
-<section class="nx-sec nx-why"><div class="nx-w2">
-<p class="nx-eb">WHY 별내목수</p>
-<h2 class="nx-h">현장에서 자주 받는<br><em>믿음에 대한 이야기</em>입니다.</h2>
-<p class="nx-sub">좋은 점만 말씀드리진 않겠습니다. 현장마다 한계도 솔직히 말씀드리겠습니다.</p>
-<div class="nx-trio">
-<div class="nx-tr"><div class="nx-no">01</div><div class="nx-t">참는 게 아니라, 처음부터 없습니다</div><p>고객 공간을 배려하기 위해서입니다. 저희가 소개하는 전기·필름·도배 팀도 비흡연 팀으로 구성합니다.</p></div>
-<div class="nx-tr"><div class="nx-no">02</div><div class="nx-t">두 세대가 함께 보는 디테일</div><p>아버지의 손기술과 아들의 최신 자재 감각이 같은 현장에서 동시에 작동합니다.</p></div>
-<div class="nx-tr"><div class="nx-no">03</div><div class="nx-t">문제는 끝까지 책임집니다</div><p>작업 중 생긴 손상이나 실수는 저희 쪽 책임 범위 안에서 끝까지 보완합니다. 가능과 불가능도 미리 말씀드립니다.</p></div>
-</div></div></section>
+<div class="nw">
+<section class="nw-sec nw-alt nw-why">
+  <div class="nw-wrap2">
+    <p class="nw-label nw-eyebrow">WHY 별내목수</p>
+    <h2 class="nw-h nw-rv">현장에서 자주 받는<br><em>믿음에 대한 이야기</em>입니다.</h2>
+    <p class="nw-body nw-sub nw-rv">좋은 점만 말씀드리진 않겠습니다. 현장마다 한계도 솔직히 말씀드리겠습니다.</p>
+    <div class="nw-trio">
+      <div class="nw-tr nw-rv"><div class="nw-label nw-no">01</div><div class="nw-title">참는 게 아니라, 처음부터 없습니다</div><p class="nw-body">작업 중 쉬는 시간에 참는 게 아니라, 처음부터 흡연자를 팀에 두지 않았습니다. 고객 공간을 배려하기 위해서입니다. 저희가 소개하는 전기·필름·도배 팀도 비흡연 팀으로 구성합니다.</p></div>
+      <div class="nw-tr nw-rv"><div class="nw-label nw-no">02</div><div class="nw-title">두 세대가 함께 보는 디테일</div><p class="nw-body">아버지의 손기술과 아들의 최신 자재 감각이 같은 현장에서 동시에 작동합니다.</p></div>
+      <div class="nw-tr nw-rv"><div class="nw-label nw-no">03</div><div class="nw-title">문제는 끝까지 책임집니다</div><p class="nw-body">작업 중 생긴 손상이나 실수는 저희 쪽 책임 범위 안에서 끝까지 보완합니다. 가능과 불가능도 미리 말씀드립니다.</p></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
 <div class="seam"></div>
 <section class="section contact-section" id="contact">
 <div class="section-head">
