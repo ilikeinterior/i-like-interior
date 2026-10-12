@@ -65,11 +65,11 @@
   }
   nav a:hover::after{ width:100%; }
   .nav-blog-btn{
-    background:var(--ink); color:var(--paper) !important; padding:9px 18px;
+    background:#1f3a68; color:#fff !important; padding:9px 18px;
     font-size:0.84rem !important; font-weight:600 !important;
   }
   .nav-blog-btn::after{ display:none; }
-  .nav-blog-btn:hover{ background:var(--wood-dark); }
+  .nav-blog-btn:hover{ background:#162b4e; }
 
   main > section{ scroll-margin-top:80px; }
 
@@ -101,8 +101,8 @@
     border-radius:2px; font-size:0.95rem; font-weight:600; text-decoration:none;
     transition:all 0.2s ease;
   }
-  .btn-primary{ background:var(--ink); color:var(--paper); }
-  .btn-primary:hover{ background:var(--wood-dark); }
+  .btn-primary{ background:#1f3a68; color:#fff; }
+  .btn-primary:hover{ background:#162b4e; }
   .btn-ghost{ border:1.5px solid var(--ink); color:var(--ink); }
   .btn-ghost:hover{ background:var(--ink); color:var(--paper); }
   .btn-blog{ background:var(--wood); color:var(--white); }
@@ -296,13 +296,13 @@ white-space:nowrap;
   .hashtag-row{ margin-top:30px; display:flex; flex-wrap:wrap; gap:8px; }
   .hashtag-row span{ font-size:0.78rem; color:var(--wood-dark); }
 
-  footer{ background:var(--ink); color:#B8B3AA; padding:50px 6vw 30px; text-align:center; }
-  footer .f-logo{ font-family:'Archivo',sans-serif; font-weight:700; color:var(--paper); font-size:1.1rem; margin-bottom:10px; }
-  footer .f-logo span{ color:var(--wood); }
+  footer{ background:#ece8db; color:#5b584f; border-top:1px solid #c9c2b4; padding:50px 6vw 30px; text-align:center; }
+  footer .f-logo{ font-family:'Archivo',sans-serif; font-weight:700; color:var(--ink); font-size:1.1rem; margin-bottom:10px; }
+  footer .f-logo span{ color:#1f3a68; }
   footer p{ font-size:0.82rem; }
   footer .f-links{ margin-top:18px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
-  footer .f-links a{ color:#B8B3AA; font-size:0.82rem; text-decoration:none; }
-  footer .f-links a:hover{ color:var(--paper); }
+  footer .f-links a{ color:#5b584f; font-size:0.82rem; text-decoration:none; }
+  footer .f-links a:hover{ color:#1f3a68; }
 
 /* 기본 */
 .desktop-header {
