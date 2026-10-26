@@ -16,6 +16,8 @@ export default function PortfolioFilter() {
 
         const filter = btn.dataset.filter;
 
+        document.querySelector(".work-grid")?.classList.toggle("is-video", filter === "video");
+
         cards.forEach((card) => {
           if (filter === "all" || card.dataset.cat === filter) {
             card.classList.remove("hide");
