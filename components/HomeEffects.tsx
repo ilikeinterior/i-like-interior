@@ -81,7 +81,16 @@ export default function HomeEffects() {
 
     // 사진 구역: 3장이 계속 돌아가며 바뀐다(사진 풀에서 현재 보이지 않는 것으로 교체)
     {
-      const pool = ["strip-1", "strip-2", "strip-3", "hero-1", "hero-2", "hero-3", "hero-4", "hero-5", "hero-6", "hero-7"];
+      const pool = [
+        "/images/hero/strip-1.jpg", "/images/hero/strip-2.jpg", "/images/hero/strip-3.jpg",
+        "/images/hero/hero-1.jpg", "/images/hero/hero-2.jpg", "/images/hero/hero-3.jpg", "/images/hero/hero-4.jpg",
+        "/images/hero/hero-5.jpg", "/images/hero/hero-6.jpg", "/images/hero/hero-7.jpg",
+        "/images/byeollae-kitchen-1.jpg", "/images/byeollae-light-1.jpg", "/images/byeollae-tvwall-2.jpg", "/images/byeollae-tvwall-3.jpg",
+        "/images/garam-b1.jpg", "/images/garam-b2.jpg", "/images/garam-b3.jpg", "/images/garam-b5.jpg",
+        "/images/geumgok-4.jpg", "/images/helio-3.jpg", "/images/helio-4.jpg",
+        "/images/jichuk-1.jpg", "/images/jichuk-2.jpg",
+        "/images/singok-1.jpg", "/images/singok-2.jpg", "/images/singok-3.jpg",
+      ];
       const imgs = Array.from(document.querySelectorAll<HTMLImageElement>(".nw-ph img"));
       const shown: string[] = [];
       const order = pool.slice();
@@ -91,7 +100,7 @@ export default function HomeEffects() {
       }
       imgs.forEach((img, i) => {
         shown[i] = order[i];
-        img.src = "/images/hero/" + order[i] + ".jpg";
+        img.src = order[i];
         img.style.transition = "opacity .5s ease";
       });
       if (!reduce && imgs.length) {
@@ -112,7 +121,7 @@ export default function HomeEffects() {
               img.style.opacity = "1";
             }, 500);
           };
-          pre.src = "/images/hero/" + next + ".jpg";
+          pre.src = next;
         };
         const timer = window.setInterval(swap, 3500);
         cleanups.push(() => window.clearInterval(timer));
