@@ -41,6 +41,22 @@ export const images = [
 
 export const portfolioItems = [
   {
+    title: '별내 리슈빌 2112동 33평 목공 — 대리석 TV 벽 반매립 가벽',
+    category: '주거 · 아파트 목공',
+    price: '360만원 · 목공',
+    desc: '마감이 전부 필름이었는데 거실 TV 벽이 대리석이었습니다. TV 부분만 철거해 반매립 가벽으로 덮고, 필름 이음새를 숨기는 메지와 점검구, 거실 간접조명, 갈매기 몰딩 철거 후 문선 보완까지 진행했습니다.',
+    tags: ['TV 반매립 가벽', '메지', '점검구', '문선'],
+    images: [
+      { src: '/images/byeollae-tvwall-2.jpg', alt: '별내 리슈빌 거실 TV 가벽 MDF 패널과 천장 간접조명' },
+      { src: '/images/byeollae-tvwall-1.jpg', alt: '별내 리슈빌 거실 TV 가벽 옆 문선과 가벽 마감' },
+      { src: '/images/byeollae-tvwall-3.jpg', alt: '별내 리슈빌 거실 가벽 문선과 창, 간접조명' },
+      { src: '/images/byeollae-kitchen-1.jpg', alt: '별내 리슈빌 주방 쪽 MDF 가벽 메지' },
+      { src: '/images/byeollae-kitchen-2.jpg', alt: '별내 리슈빌 MDF 가벽과 천장 간접조명' },
+      { src: '/images/byeollae-kitchen-3.jpg', alt: '별내 리슈빌 메지 선에 맞춘 점검구' },
+      { src: '/images/byeollae-light-1.jpg', alt: '별내 리슈빌 거실 우물천장 간접조명' },
+    ],
+  },
+  {
     title: '파주 운정 가람마을 44평 목공 3일',
     category: '주거 · 아파트 목공 3일',
     price: '410만원 · 목공 3일',
@@ -142,6 +158,7 @@ export const services = [
 ];
 
 export const blogPosts = [
+  { title: '별내 리슈빌 2112동 33평 목공 — 대리석 TV 벽 반매립 가벽·메지·점검구·문선', price: '360만원', href: '/blog/2026-10-byeollae-richeville' },
   { title: '파주 운정 가람마을 44평 목공 — 아트월·선반·아치 게이트 3일', price: '410만원', href: '/blog/2026-10-paju-unjeong-garam' },
   { title: '한복 매장 목공 — 예산 빠듯할수록 공정 정리가 답', price: '370만원', href: 'https://blog.naver.com/PostView.naver?blogId=gris2&logNo=224176271260' },
   { title: '의정부 신동아 은하수 아파트 37평 목공 — 구축 아파트 리모델링', price: '480만원', href: 'https://blog.naver.com/PostView.naver?blogId=gris2&logNo=224172550643' },
