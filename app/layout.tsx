@@ -3,6 +3,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import NaverAnalytics from '@/components/NaverAnalytics';
 
 export const metadata: Metadata = {
   title: "별내목수 · 아이라이크 인테리어",
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
         <Footer />
+        <NaverAnalytics />
       </body>
       <GoogleAnalytics gaId="G-XSN11FF3DF" />
     </html>
