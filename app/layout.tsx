@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import NaverAnalytics from '@/components/NaverAnalytics';
+import FloatingNav from '@/components/FloatingNav';
 
 export const metadata: Metadata = {
   title: "별내목수 · 아이라이크 인테리어",
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Footer />
         <NaverAnalytics />
+        <FloatingNav />
       </body>
       <GoogleAnalytics gaId="G-XSN11FF3DF" />
     </html>
