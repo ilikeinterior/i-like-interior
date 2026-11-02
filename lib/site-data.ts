@@ -41,6 +41,31 @@ export const images = [
 
 export const portfolioItems = [
   {
+    title: '장위1동 주민센터 관공서 목공 — 협력업체로 5일, 아치·곡면 벤치',
+    category: '관공서 · 주민센터 목공 5일',
+    price: '520만원 · 목공 5일',
+    desc: '서울 성북구 장위1동 주민센터 목공을 협력업체로 5일 동안 했습니다. 창가 대형 아치와 아치 창구는 MDF 틀을 짜서 트리머로 땄고, 곡면 벤치와 천장 모서리는 요꼬 합판으로 만들었으며, 유리가 들어갈 벽 개구부 틀까지 진행했습니다.',
+    tags: ['아치', '곡면 벤치', '벽 개구부', '요꼬 합판'],
+    images: [
+      { src: '/images/jangwi-01.jpg', alt: '장위1동 주민센터 햇살이 스미는 아치 공간, 관공서 목공 보정 이미지' },
+      { src: '/images/jangwi-03.jpg', alt: '장위1동 주민센터 창가 대형 아치 MDF 목공 공사 중' },
+      { src: '/images/jangwi-08.jpg', alt: '장위1동 주민센터 홀에서 본 아치 창구 보정 이미지' },
+      { src: '/images/jangwi-18.jpg', alt: '장위1동 주민센터 창가 곡면 벤치 MDF 제작' },
+      { src: '/images/jangwi-24.jpg', alt: '장위1동 주민센터 벽 개구부 아치 MDF 마감' },
+    ],
+  },
+  {
+    title: '송파 헬리오시티 213동 목공 — 대리석 철거 후 바탕부터',
+    category: '주거 · 아파트 목공',
+    price: '110만원 · 목공 1일',
+    desc: '대리석을 철거한 TV 벽 바탕을 각재와 석고보드로 다시 잡고, 락소 라운드 히든몰딩, 거실 천장 마그네틱 조명박스, 현관 간접조명 가벽, 걸레받이까지 하루에 진행했습니다.',
+    tags: ['TV 가벽', '히든몰딩', '마그네틱 조명박스', '걸레받이'],
+    images: [
+      { src: '/images/helio-3.jpg', alt: '송파 헬리오시티 거실 TV 가벽과 천장 간접조명' },
+      { src: '/images/helio-2.jpg', alt: 'TV 가벽의 둥근 모서리와 천장 라인 조명이 보이는 거실' },
+    ],
+  },
+  {
     title: '별내 리슈빌 2112동 33평 목공 — 대리석 TV 벽 반매립 가벽',
     category: '주거 · 아파트 목공',
     price: '360만원 · 목공',
@@ -85,17 +110,6 @@ export const portfolioItems = [
       { src: '/images/sanghyeon-3.jpg', alt: '아치형 게이트 너머 창과 햇빛 용인 상현동 라운딩 목공' },
       { src: '/images/sanghyeon-4.jpg', alt: '용인 상현동 아파트 거실 아트월 반원 몰딩 라운드 가벽 목표 이미지' },
 ],
-  },
-  {
-    title: '송파 헬리오시티 213동 목공 — 대리석 철거 후 바탕부터',
-    category: '주거 · 아파트 목공',
-    price: '110만원 · 목공 1일',
-    desc: '대리석을 철거한 TV 벽 바탕을 각재와 석고보드로 다시 잡고, 락소 라운드 히든몰딩, 거실 천장 마그네틱 조명박스, 현관 간접조명 가벽, 걸레받이까지 하루에 진행했습니다.',
-    tags: ['TV 가벽', '히든몰딩', '마그네틱 조명박스', '걸레받이'],
-    images: [
-      { src: '/images/helio-3.jpg', alt: '송파 헬리오시티 거실 TV 가벽과 천장 간접조명' },
-      { src: '/images/helio-2.jpg', alt: 'TV 가벽의 둥근 모서리와 천장 라인 조명이 보이는 거실' },
-    ],
   },
   {
     title: '운정 해링턴 플레이스 GTX 아파트 24평형',
@@ -169,6 +183,7 @@ export const services = [
 ];
 
 export const blogPosts = [
+  { title: '장위1동 주민센터 관공서 목공 — 협력업체로 5일, 아치·곡면 벤치·벽 개구부', price: '520만원', href: '/blog/2026-10-jangwi1-juminsenter' },
   { title: '별내 리슈빌 2112동 33평 목공 — 대리석 TV 벽 반매립 가벽·메지·점검구·문선', price: '360만원', href: '/blog/2026-10-byeollae-richeville' },
   { title: '파주 운정 가람마을 44평 목공 — 아트월·선반·아치 게이트 3일', price: '410만원', href: '/blog/2026-10-paju-unjeong-garam' },
   { title: '한복 매장 목공 — 예산 빠듯할수록 공정 정리가 답', price: '370만원', href: 'https://blog.naver.com/PostView.naver?blogId=gris2&logNo=224176271260' },
