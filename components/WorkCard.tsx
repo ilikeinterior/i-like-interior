@@ -25,6 +25,15 @@ export default function WorkCard({ item }: { item: Work }) {
               <span key={tag}>{tag}</span>
             ))}
           </div>
+          {item.href && (
+            <a
+              className="nx-blk"
+              href={item.href}
+              {...(item.href.startsWith('/') ? {} : { target: '_blank', rel: 'noopener' })}
+            >
+              {item.href.startsWith('/') ? '시공일지에서 보기 →' : '블로그에서 보기 →'}
+            </a>
+          )}
         </div>
       </div>
     </article>
