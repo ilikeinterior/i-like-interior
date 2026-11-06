@@ -41,6 +41,20 @@ export const images = [
 
 export const portfolioItems = [
   {
+    title: '다산 한신더휴 8단지 50평 목공 — 후드 천장 보강·가벽 철거 후 천장·평몰딩',
+    category: '주거 · 아파트 목공 2일',
+    price: '300만원 · 목공 2일',
+    desc: '에코스톤과 가벽을 철거하면서 범위가 달라진 현장입니다. 후드 자리는 12T 합판과 각재 트러스로 보강하고, 철거 후 천장을 다시 보강했습니다. 내력기둥은 MDF 틀과 석고보드로 감싸고, 하지 작업 뒤 30미리 화이트 평몰딩을 시공했습니다.',
+    href: '/blog/2026-11-dasan-hansin-thehue',
+    tags: ['후드 천장 보강', '가벽 철거', '기둥 감싸기', '평몰딩'],
+    images: [
+      { src: '/images/dasan-living-1.jpg', alt: '다산 한신더휴 목공 후 거실에서 주방까지 이어진 천장과 기둥' },
+      { src: '/images/dasan-hood.jpg', alt: '다산 한신더휴 천장 마감을 끝낸 주방 후드 자리' },
+      { src: '/images/dasan-pillar.jpg', alt: '다산 한신더휴 에코스톤 철거 후 MDF와 석고보드로 감싼 기둥' },
+      { src: '/images/dasan-molding.jpg', alt: '다산 한신더휴 30미리 화이트 평몰딩으로 마감한 문선과 천장 코너' },
+    ],
+  },
+  {
     title: '장위1동 주민센터 관공서 목공 — 협력업체로 5일, 아치·곡면 벤치',
     category: '관공서 · 주민센터 목공 5일',
     price: '520만원 · 목공 5일',
@@ -195,6 +209,7 @@ export const services = [
 ];
 
 export const blogPosts = [
+  { title: '다산 한신더휴 8단지 50평 목공 — 후드 천장 보강·가벽 철거 후 천장·평몰딩 이틀', price: '300만원', href: '/blog/2026-11-dasan-hansin-thehue' },
   { title: '장위1동 주민센터 관공서 목공 — 협력업체로 5일, 아치·곡면 벤치·벽 개구부', price: '520만원', href: '/blog/2026-10-jangwi1-juminsenter' },
   { title: '별내 리슈빌 2112동 33평 목공 — 대리석 TV 벽 반매립 가벽·메지·점검구·문선', price: '360만원', href: '/blog/2026-10-byeollae-richeville' },
   { title: '파주 운정 가람마을 44평 목공 — 아트월·선반·아치 게이트 3일', price: '410만원', href: '/blog/2026-10-paju-unjeong-garam' },
