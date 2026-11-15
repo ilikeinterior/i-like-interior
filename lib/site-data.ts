@@ -41,6 +41,21 @@ export const images = [
 
 export const portfolioItems = [
   {
+    title: '검단 힐스테이트신검단센트럴 목공 — 중문 레일 매립 히든 레일 박스·우물천장 라운드',
+    category: '주거 · 아파트 목공',
+    price: '190만원',
+    desc: '영림 중문 상부레일을 천장 속에 숨기는 박스를 현관과 안방 드레스룸에 만들었습니다. 현관 박스는 2530㎜였고, 드레스룸은 금속보강 대신 12t 합판으로 상부를 더 덧댔습니다. 같은 날 거실 우물천장 라운드와 간접조명 박스도 작업했습니다.',
+    href: '/blog/2026-11-geumdan-hillstate-central',
+    tags: ['중문 레일 매립', '히든 레일 박스', '12t 합판 보강', '우물천장 라운드'],
+    images: [
+      { src: '/images/geumdan-01.jpg', alt: '검단 힐스테이트신검단센트럴 거실 우물천장 라운드와 간접조명' },
+      { src: '/images/geumdan-03.jpg', alt: '검단 중문 레일 박스를 넣기 위해 연 천장 안쪽, 배관이 지나가는 모습' },
+      { src: '/images/geumdan-07.jpg', alt: '검단 현관 천장 레일 박스를 MDF로 마감한 모습' },
+      { src: '/images/geumdan-12.jpg', alt: '검단 레일 박스 단면에 줄자를 댄 모습' },
+      { src: '/images/geumdan-15.jpg', alt: '검단 거실 우물천장 라운드 모서리와 간접조명' },
+    ],
+  },
+  {
     title: '다산 한신더휴 8단지 50평 목공 — 후드 천장 보강·가벽 철거 후 천장·평몰딩',
     category: '주거 · 아파트 목공 2일',
     price: '300만원 · 목공 2일',
@@ -209,6 +224,7 @@ export const services = [
 ];
 
 export const blogPosts = [
+  { title: '검단 힐스테이트신검단센트럴 목공 — 중문 레일 매립 히든 레일 박스 2개소·우물천장 라운드', price: '190만원', href: '/blog/2026-11-geumdan-hillstate-central' },
   { title: '다산 한신더휴 8단지 50평 목공 — 후드 천장 보강·가벽 철거 후 천장·평몰딩 이틀', price: '300만원', href: '/blog/2026-11-dasan-hansin-thehue' },
   { title: '장위1동 주민센터 관공서 목공 — 협력업체로 5일, 아치·곡면 벤치·벽 개구부', price: '520만원', href: '/blog/2026-10-jangwi1-juminsenter' },
   { title: '별내 리슈빌 2112동 33평 목공 — 대리석 TV 벽 반매립 가벽·메지·점검구·문선', price: '360만원', href: '/blog/2026-10-byeollae-richeville' },
