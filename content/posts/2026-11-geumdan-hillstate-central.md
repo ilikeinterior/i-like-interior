@@ -40,19 +40,23 @@ https://youtu.be/3f9SKssoXqo
 천장 안에는 배관과 골조가 지나가고 있어서, 박스가 들어갈 자리를 정확히 잡아야 합니다.
 
 ![천장을 열어 본 모습. 배관이 지나갑니다](/images/geumdan-03.jpg)
+
 ![천장을 연 단면. 이 안에 레일 박스가 들어갑니다](/images/geumdan-04.jpg)
 
 그다음 합판과 각재로 박스를 짰습니다.
 센서선과 메인선이 지나갈 빈 공간도 박스 안에 남겨 둡니다.
 
 ![합판과 각재로 박스를 짜는 과정](/images/geumdan-05.jpg)
+
 ![천장 안쪽에서 본 박스](/images/geumdan-06.jpg)
 
 박스를 짠 뒤에는 천장 면을 MDF로 마감했습니다.
 도배가 들어갈 수 있는 상태까지 만든 겁니다.
 
 ![MDF로 마감한 박스](/images/geumdan-07.jpg)
+
 ![마감한 박스를 아래에서 본 모습](/images/geumdan-08.jpg)
+
 ![복도 천장에 박스 라인이 정리된 모습](/images/geumdan-09.jpg)
 
 ## 안방 드레스룸은 금속보강 대신 합판으로
@@ -60,9 +64,13 @@ https://youtu.be/3f9SKssoXqo
 안방 드레스룸도 같은 방식으로 박스를 만들었습니다.
 
 ![작업 전 복도](/images/geumdan-10.jpg)
+
 ![박스를 짜는 과정](/images/geumdan-11.jpg)
+
 ![박스 단면. 줄자로 두께를 쟀습니다](/images/geumdan-12.jpg)
+
 ![개구부 위에 올린 박스](/images/geumdan-13.jpg)
+
 ![개구부와 박스 라인이 정리된 모습](/images/geumdan-14.jpg)
 
 상부레일은 금속보강이 없으면 처지는 경우가 있다고 합니다.
@@ -81,6 +89,7 @@ https://youtu.be/3f9SKssoXqo
 이 작업은 70만원이었습니다.
 
 ![우물천장 라운드 모서리. 안쪽 둘레로 간접조명이 들어갑니다](/images/geumdan-15.jpg)
+
 ![곡선이 벽과 만나는 부분](/images/geumdan-16.jpg)
 
 ## 이번 현장의 한계
