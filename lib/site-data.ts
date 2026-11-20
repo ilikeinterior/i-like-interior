@@ -41,6 +41,21 @@ export const images = [
 
 export const portfolioItems = [
   {
+    title: '마포 래미안 푸르지오 103동 목공 — 전실 가벽 신발장 자리·문선 3개 덧댐·몰딩 이음',
+    category: '주거 · 아파트 목공',
+    price: '100만원',
+    desc: '신발장 넣을 공간이 없어 전실 일부를 철거하고 ㄷ자 틀로 자리를 만들었습니다. 앞판은 15mm 합판이고, 철거가 안 되는 문선 3개는 9mm MDF 고밀도로 덧댔으며 남은 5mm 단차는 도배팀이 핸디로 잡았습니다. 냉장고장 위 몰딩은 가벽 상부에서 옮겨 이어 붙였습니다. 하루, 2명 작업입니다.',
+    href: '/blog/2026-11-mapo-raemian-prugio',
+    tags: ['전실 가벽', '매립형 신발장 자리', '문선 덧댐', '몰딩 이음'],
+    images: [
+      { src: '/images/mapo-01.jpg', alt: '마포 래미안 푸르지오 전실 가벽 완성, 하부 석고와 상부 합판' },
+      { src: '/images/mapo-03.jpg', alt: '마포 래미안 푸르지오 문선 덧댐과 전실 가벽 작업 중 모습' },
+      { src: '/images/mapo-09.jpg', alt: '마포 래미안 푸르지오 방 안쪽 문선 덧댐' },
+      { src: '/images/mapo-13.jpg', alt: '마포 래미안 푸르지오 복도 문선 마감' },
+      { src: '/images/mapo-15.jpg', alt: '마포 래미안 푸르지오 냉장고장 위 몰딩 이음' },
+    ],
+  },
+  {
     title: '검단 힐스테이트신검단센트럴 목공 — 중문 레일 매립 히든 레일 박스·우물천장 라운드',
     category: '주거 · 아파트 목공',
     price: '190만원',
@@ -224,6 +239,7 @@ export const services = [
 ];
 
 export const blogPosts = [
+  { title: '마포 래미안 푸르지오 103동 목공 — 전실 가벽 신발장 자리·문선 3개 덧댐·몰딩 이음 하루', price: '100만원', href: '/blog/2026-11-mapo-raemian-prugio' },
   { title: '검단 힐스테이트신검단센트럴 목공 — 중문 레일 매립 히든 레일 박스 2개소·우물천장 라운드', price: '190만원', href: '/blog/2026-11-geumdan-hillstate-central' },
   { title: '다산 한신더휴 8단지 50평 목공 — 후드 천장 보강·가벽 철거 후 천장·평몰딩 이틀', price: '300만원', href: '/blog/2026-11-dasan-hansin-thehue' },
   { title: '장위1동 주민센터 관공서 목공 — 협력업체로 5일, 아치·곡면 벤치·벽 개구부', price: '520만원', href: '/blog/2026-10-jangwi1-juminsenter' },
