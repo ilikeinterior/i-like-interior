@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPost(slug);
   if (!post) return {};
   return {
-    title: post.title,
+    title: { absolute: post.title },
     description: post.summary,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
@@ -59,7 +59,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     datePublished: post.date,
     description: post.summary,
     image: post.image ? [`https://www.ilikeinterior.com${post.image}`] : undefined,
-    author: { '@type': 'Organization', name: '별내목수 아이라이크 인테리어' },
+    author: { '@type': 'Organization', name: '별내목수 · 아이라이크 인테리어', url: 'https://www.ilikeinterior.com' },
   };
   return (
     <main className="page-main">
