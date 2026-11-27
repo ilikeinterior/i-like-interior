@@ -7,11 +7,20 @@ import NaverAnalytics from '@/components/NaverAnalytics';
 import FloatingNav from '@/components/FloatingNav';
 
 export const metadata: Metadata = {
-  title: "별내목수 · 아이라이크 인테리어",
+  metadataBase: new URL("https://www.ilikeinterior.com"),
+  title: {
+    default: "별내목수 · 아이라이크 인테리어 | 남양주 별내 아파트 목공",
+    template: "%s | 별내목수 · 아이라이크 인테리어",
+  },
   description:
-    "비흡연 목수팀, 별내목수. 아버지의 대를 이은 장인정신, 25년 경력이 만드는 신뢰.",
+    "남양주 별내 중심 아파트 인테리어 목공. 비흡연 목수팀, 25년 경력, 30~40대 젊은 팀이 TV 가벽·히든도어·우물천장을 직접 시공합니다. 실제 시공 금액 공개. 전화 010-4551-9870",
 
   keywords: [
+    "별내목수",
+    "남양주 아파트 목공",
+    "남양주 아파트 목수",
+    "별내 아파트 목수",
+    "비흡연 목수팀",
     "파주 인테리어",
     "운정 인테리어",
     "별내목수",
@@ -25,23 +34,24 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "별내목수 · 아이라이크 인테리어",
+    title: "별내목수 · 아이라이크 인테리어 | 남양주 별내 아파트 목공",
     description:
-      "비흡연 목수팀, 별내목수. 아버지의 대를 이은 장인정신, 25년 경력이 만드는 신뢰.",
+      "남양주 별내 중심 아파트 인테리어 목공. 비흡연 목수팀, 25년 경력, 30~40대 젊은 팀이 직접 시공합니다. 실제 시공 금액 공개.",
     siteName: "아이라이크 인테리어",
     locale: "ko_KR",
     type: "website",
     images: [
       {
-        url: "/images/og-image.png",
-        width: 726,
-        height: 331,
-        alt: "아이라이크 인테리어 - 비흡연 목수팀",
+        url: "/image.jpg",
+        width: 1536,
+        height: 1024,
+        alt: "아이라이크 인테리어 로고",
       },
     ],
   },
 
   verification: {
+    google: "FrlQ9gXFPxpx6twr0jQip5_eZ8AJijvTIdIdf5uUBxk",
     other: {
       "naver-site-verification": "1720cc600690f9c8a3282168fc7ecec8bb3a8a5b",
     },
