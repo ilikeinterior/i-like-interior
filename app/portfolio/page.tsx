@@ -2,7 +2,11 @@ import SectionHead from '@/components/SectionHead';
 import WorkCard from '@/components/WorkCard';
 import { portfolioItems, images } from '@/lib/site-data';
 import Image from 'next/image';
-export const metadata = { title: '시공사례' };
+export const metadata = {
+  title: '시공사례 · 아파트 목공 실제 금액 공개',
+  description: '별내·다산·운정·검단 등 아파트 목공 시공사례와 실제 목공 금액. TV 가벽, 히든도어, 9mm 문선, 우물천장, 아치 게이트.',
+  alternates: { canonical: '/portfolio' },
+};
 
 
 
