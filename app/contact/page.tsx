@@ -1,6 +1,10 @@
 import { site } from '@/lib/site-data';
 
-export const metadata = { title: '문의하기' };
+export const metadata = {
+  title: '문의하기 · 전화·카카오톡 상담',
+  description: '현장 사진이나 평면도를 보내주시면 더 정확하게 안내드립니다. 전화 010-4551-9870, 카카오톡 상담 가능. 활동지역 남양주·일산·분당 등 서울·경기.',
+  alternates: { canonical: '/contact' },
+};
 
 export default function ContactPage() {
   return (
